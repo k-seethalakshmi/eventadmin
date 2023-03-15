@@ -2492,7 +2492,11 @@
                       "defaultOptionValue": "",
                       "animateLoading": true,
                       "parentColumnSpace": 14.0625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onOptionChange"
+                        }
+                      ],
                       "leftColumn": 0,
                       "dynamicBindingPathList": [
                         {
@@ -2512,7 +2516,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 14,
+                      "rightColumn": 13,
                       "dynamicHeight": "FIXED",
                       "widgetId": "eud2ty4fxh",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -2526,6 +2530,7 @@
                       "responsiveBehavior": "fill",
                       "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                       "maxDynamicHeight": 9000,
+                      "onOptionChange": "",
                       "minDynamicHeight": 4
                     },
                     {

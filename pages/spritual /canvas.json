@@ -179,7 +179,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{navigateTo('Music Event', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -231,6 +231,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
+                      "onClick": "{{navigateTo('Comedy Events', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -245,7 +246,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.0625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
@@ -278,6 +283,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2",
+                      "onClick": "{{navigateTo('WorkShop', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -292,7 +298,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.0625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 39,
                       "dynamicBindingPathList": [
                         {
@@ -799,16 +809,21 @@
                             {
                               "boxShadow": "none",
                               "widgetName": "Image1",
+                              "onClick": "{{showModal()}}",
                               "displayName": "Image",
                               "iconSVG": "/static/media/icon.52d8fb963abcb95c79b10f1553389f22.svg",
                               "topRow": 0,
-                              "bottomRow": 12,
+                              "bottomRow": 13,
                               "parentRowSpace": 10,
                               "type": "IMAGE_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 7.5727081298828125,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 0,
                               "dynamicBindingPathList": [

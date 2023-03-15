@@ -179,7 +179,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{navigateTo('Music Event', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -231,6 +231,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
+                      "onClick": "{{navigateTo('Comedy Events', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -245,7 +246,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.0625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
@@ -323,6 +328,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2Copy",
+                      "onClick": "{{navigateTo('spritual ', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -337,7 +343,11 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 14.0625,
-                      "dynamicTriggerPathList": [],
+                      "dynamicTriggerPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "leftColumn": 52,
                       "dynamicBindingPathList": [
                         {
