@@ -59,6 +59,22 @@
     {
       "id": "Client_Music",
       "isDefault": false
+    },
+    {
+      "id": "Client_WorkShop",
+      "isDefault": false
+    },
+    {
+      "id": "client_comedy",
+      "isDefault": false
+    },
+    {
+      "id": "Client_spiritual",
+      "isDefault": false
+    },
+    {
+      "id": "Event_Booking",
+      "isDefault": false
     }
   ],
   "viewMode": false,

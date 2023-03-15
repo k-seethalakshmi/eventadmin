@@ -929,7 +929,7 @@
                     {
                       "boxShadow": "none",
                       "widgetName": "IconButton1",
-                      "onClick": "",
+                      "onClick": "{{navigateTo('Home', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                       "displayName": "Icon Button",
                       "iconSVG": "/static/media/icon.1a0c634ac75f9fa6b6ae7a8df882a3ba.svg",
@@ -1115,7 +1115,7 @@
                                   "key": "borderRadius"
                                 }
                               ],
-                              "defaultImage": "https://img.freepik.com/free-photo/close-up-microphone-concert-stage-with-beautiful-lighting_169016-11074.jpg?w=1060&t=st=1678687780~exp=1678688380~hmac=22b51630d195803a337bb79012c5a762e26318b56e1e5e504692bbd32e31e6a9",
+                              "defaultImage": "https://www.ombradellaterra.nl/wp-content/uploads/2020/12/Online-Workshop-Effectief-online-brainstormen-%E2%80%93-Hoe-doe-je-dat.png",
                               "key": "sdgo0ferbi",
                               "image": "",
                               "isDeprecated": false,
