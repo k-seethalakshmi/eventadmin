@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 380,
+          "bottomRow": 460,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -37,15 +37,16 @@
                 "parent",
                 "group"
               ],
-              "topRow": 27,
-              "bottomRow": 37,
+              "topRow": 7,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "type": "CONTAINER_WIDGET",
               "hideCard": false,
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 11.40625,
-              "leftColumn": 19,
+              "dynamicTriggerPathList": [],
+              "leftColumn": 6,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -59,7 +60,7 @@
                   "widgetName": "Canvas1",
                   "displayName": "Canvas",
                   "topRow": 0,
-                  "bottomRow": 100,
+                  "bottomRow": 390,
                   "parentRowSpace": 1,
                   "type": "CANVAS_WIDGET",
                   "canExtend": false,
@@ -89,8 +90,8 @@
               "key": "zek388tx1o",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 43,
-              "dynamicHeight": "AUTO_HEIGHT",
+              "rightColumn": 61,
+              "dynamicHeight": "FIXED",
               "widgetId": "jzsa7bolwc",
               "containerStyle": "card",
               "minWidth": 450,
@@ -100,10 +101,8 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 27,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 37,
               "minDynamicHeight": 10
             }
           ]
