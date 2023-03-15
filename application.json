@@ -50,7 +50,7 @@
     "type": "FLUID"
   },
   "publishedAppLayout": {
-    "type": "MOBILE"
+    "type": "FLUID"
   },
   "unpublishedCustomJSLibs": [],
   "publishedCustomJSLibs": [],
