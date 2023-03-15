@@ -39,6 +39,10 @@
     {
       "id": "Home",
       "isDefault": false
+    },
+    {
+      "id": "Music Event",
+      "isDefault": false
     }
   ],
   "viewMode": false,
