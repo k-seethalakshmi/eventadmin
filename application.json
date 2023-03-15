@@ -43,6 +43,18 @@
     {
       "id": "Home",
       "isDefault": false
+    },
+    {
+      "id": "Comedy Events",
+      "isDefault": false
+    },
+    {
+      "id": "WorkShop",
+      "isDefault": false
+    },
+    {
+      "id": "spritual ",
+      "isDefault": false
     }
   ],
   "viewMode": false,
