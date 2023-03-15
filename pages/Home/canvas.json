@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 540,
+          "bottomRow": 620,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -772,6 +772,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                               "widgetName": "Button4",
+                              "onClick": "{{showModal()}}",
                               "buttonColor": "#3b82f6",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -786,7 +787,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 8.41650390625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 44,
                               "dynamicBindingPathList": [],
                               "text": "BOOK\n",
@@ -3393,7 +3398,7 @@
                                 "label"
                               ],
                               "topRow": 49,
-                              "bottomRow": 59,
+                              "bottomRow": 60,
                               "parentRowSpace": 10,
                               "type": "TEXT_WIDGET",
                               "hideCard": false,

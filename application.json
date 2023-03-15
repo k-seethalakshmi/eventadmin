@@ -55,6 +55,10 @@
     {
       "id": "spritual ",
       "isDefault": false
+    },
+    {
+      "id": "Client_Music",
+      "isDefault": false
     }
   ],
   "viewMode": false,
