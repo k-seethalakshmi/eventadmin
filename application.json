@@ -1,0 +1,62 @@
+{
+  "pages": [
+    {
+      "id": "Sign in",
+      "isDefault": true
+    },
+    {
+      "id": "Forget Password",
+      "isDefault": false
+    },
+    {
+      "id": "Dash board",
+      "isDefault": false
+    },
+    {
+      "id": "All Events",
+      "isDefault": false
+    },
+    {
+      "id": "Create Events",
+      "isDefault": false
+    },
+    {
+      "id": "Client Event",
+      "isDefault": false
+    },
+    {
+      "id": "user payment",
+      "isDefault": false
+    },
+    {
+      "id": "User Details",
+      "isDefault": false
+    },
+    {
+      "id": "Client payment ",
+      "isDefault": false
+    },
+    {
+      "id": "Home",
+      "isDefault": false
+    }
+  ],
+  "viewMode": false,
+  "appIsExample": false,
+  "unreadCommentThreads": 0,
+  "color": "#F3F1C7",
+  "icon": "flag",
+  "unpublishedAppLayout": {
+    "type": "FLUID"
+  },
+  "publishedAppLayout": {
+    "type": "MOBILE"
+  },
+  "unpublishedCustomJSLibs": [],
+  "publishedCustomJSLibs": [],
+  "evaluationVersion": 2,
+  "applicationVersion": 2,
+  "collapseInvisibleWidgets": true,
+  "isManualUpdate": false,
+  "deleted": false
+}
