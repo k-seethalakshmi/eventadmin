@@ -95,7 +95,7 @@
   "color": "#F3F1C7",
   "icon": "flag",
   "unpublishedAppLayout": {
-    "type": "DESKTOP"
+    "type": "FLUID"
   },
   "publishedAppLayout": {
     "type": "DESKTOP"
