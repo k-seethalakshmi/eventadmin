@@ -79,6 +79,14 @@
     {
       "id": "Adding Events",
       "isDefault": false
+    },
+    {
+      "id": "listyourshows",
+      "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,
@@ -87,7 +95,7 @@
   "color": "#F3F1C7",
   "icon": "flag",
   "unpublishedAppLayout": {
-    "type": "FLUID"
+    "type": "DESKTOP"
   },
   "publishedAppLayout": {
     "type": "FLUID"

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Addinsert_event",
+    "name": "insert_event",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -29,10 +29,10 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"Event List\",\n  \"documents\": [\n    {\n      \"Event Amount\": \"new value\",\n      \"Event Date\": \"new value\",\n      \"Event Language\": \"new value\",\n      \"Event Mode\": \"new value\",\n      \"Event Name\": \"new value\",\n      \"Event Place\": \"new value\",\n      \"Event Time \": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"EventList\",\n  \"documents\": [\n    {\n      \"EventDate\": \"new value\",\n      \"EventLanguage\": \"new value\",\n      \"EventMode\": \"new value\",\n      \"EventName\": \"new value\",\n      \"EventPlace\": \"new value\",\n      \"EventTime\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "Event List"
+          "data": "EventList"
         },
         "command": {
           "data": "INSERT"
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Event Amount\": {{Event_Amount.text}},\n      \"Event Date\": {{Date1.formattedDate}}\n,,      \"Evene\": {{Event_Language}},\n      \"Event Mode:{{E}},\n      \"Event Name\": \"new value\",\n      \"Event Place\": \"new value\",\n      \"Event Time \": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n}]\n[{      \"Event Details\":{{Event_Details.text}},\n\t\"Event Name\":{{Event_Name.text}},\n      \"Event Type\": {{Event_Type.selectedOptionValue}},\n      \"Price\":{{Price.number}},\n\t\n      \"Time\": {{time.inputText}},\n      \"Venue Name\":{{venue.text}},\n      \n"
+            "data": "[{      \"Event Amount\": {{Event_Amount.text}},\n      \"Event Date\": {{Date1.formattedDate}},\n\t\n\t\"Event language \": {{Event_Language.selectedOptionValue}},\n\t\"Event Mode\":{{Event_Mode.selectedOptionValue}},\n    \"Event Name\": {{EventName.text}},\n      \"Event Place\":{{Event_Place.text}},\n      \"Event Time \": {{Event_time.text}},\n }]"
           }
         },
         "smartSubstitution": {
@@ -107,22 +107,19 @@
     "messages": [],
     "jsonPathKeys": [
       "Date1.formattedDate",
-      "E",
+      "EventName.text",
       "Event_Amount.text",
-      "Event_Details.text",
-      "Event_Language",
-      "Event_Name.text",
-      "Event_Type.selectedOptionValue",
-      "Price.number",
-      "time.inputText",
-      "venue.text"
+      "Event_Language.selectedOptionValue",
+      "Event_Mode.selectedOptionValue",
+      "Event_Place.text",
+      "Event_time.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_Addinsert_event",
+  "id": "Event List_insert_event",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6412b2e3c182ff53e439dbde"
+  "gitSyncId": "64115632c182ff53e439cb05_6412d922d67ea94e3d972095"
 }

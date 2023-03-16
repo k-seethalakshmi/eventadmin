@@ -32,7 +32,7 @@
           "data": "{\n  \"find\": \"Event List\",\n  \"filter\": {\n    \"Event Amount\": \"500\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Event List"
+          "data": "EventList"
         },
         "command": {
           "data": "FIND"
