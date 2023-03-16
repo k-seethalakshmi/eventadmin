@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 1000,
+          "bottomRow": 1080,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -2800,7 +2800,7 @@
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 12,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "2u1a0f2lu5",
                               "isVisible": true,
                               "version": 1,
@@ -2809,7 +2809,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "0.375rem",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -2991,17 +2991,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 18,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://img.freepik.com/free-vector/stand-up-comedy-banner-with-vintage-microphone_1308-80866.jpg",
                               "key": "kydgbsboml",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 27,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "poq1rg3c2b",
                               "isVisible": true,
                               "version": 1,
@@ -3010,7 +3006,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -3082,17 +3078,13 @@
                               "dynamicTriggerPathList": [],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 36,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://images.squarespace-cdn.com/content/v1/57fbdd00440243c787b8adbc/1481869110946-DDOJRSSG32SHKHY6ZM89/Spiritual+health+banner.jpg?format=1500w",
                               "key": "kydgbsboml",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 45,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "iq63it7z2h",
                               "isVisible": true,
                               "version": 1,
@@ -3101,7 +3093,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -3233,17 +3225,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 51,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://www.ombradellaterra.nl/wp-content/uploads/2020/12/Online-Workshop-Effectief-online-brainstormen-%E2%80%93-Hoe-doe-je-dat.png",
                               "key": "ijf6cgm6mf",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 60,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "vknc4iipy5",
                               "isVisible": true,
                               "version": 1,
@@ -3252,7 +3240,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -3384,11 +3372,7 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://piggy-rider.s3.ap-south-1.amazonaws.com/craft-workshop-disha-mehta-primary-image-PlossZezGSujyTwz.jpg",
                               "key": "ijf6cgm6mf",
                               "image": "",
@@ -3404,7 +3388,7 @@
                               "maxZoomLevel": 1,
                               "enableDownload": false,
                               "originalTopRow": 34,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "originalBottomRow": 42,
                               "enableRotation": false
                             },
@@ -3537,17 +3521,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 20,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://images.ganeshaspeaks.com/Spirituality/what-is-Spirituality/Define-Spirituality.jpg",
                               "key": "ijf6cgm6mf",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 30,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "8nx67webpi",
                               "isVisible": true,
                               "version": 1,
@@ -3557,7 +3537,7 @@
                               "maxZoomLevel": 1,
                               "enableDownload": false,
                               "originalTopRow": 31,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "originalBottomRow": 44,
                               "enableRotation": false
                             },
@@ -3690,17 +3670,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 37,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://media.istockphoto.com/id/944794890/vector/comedy-show-stand-up-invitation-is-a-neon-sign-emblem-bright-flyer-light-poster-neon-banner.jpg?s=612x612&w=0&k=20&c=vYUrO0jCTi0YAdLBlFClEgGrkS7NoU-lNpgQ2f_ojSA=",
                               "key": "ijf6cgm6mf",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 47,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "4acwasv2pq",
                               "isVisible": true,
                               "version": 1,
@@ -3710,7 +3686,7 @@
                               "maxZoomLevel": 1,
                               "enableDownload": false,
                               "originalTopRow": 34,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "originalBottomRow": 42,
                               "enableRotation": false
                             },

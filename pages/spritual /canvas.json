@@ -826,17 +826,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 2,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://images.ganeshaspeaks.com/Spirituality/what-is-Spirituality/Define-Spirituality.jpg",
                               "key": "wtpo0gt9u5",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 18,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "lfqrqy5v3t",
                               "isVisible": true,
                               "version": 1,
@@ -845,7 +841,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -868,17 +864,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 28,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://images.squarespace-cdn.com/content/v1/57fbdd00440243c787b8adbc/1481869110946-DDOJRSSG32SHKHY6ZM89/Spiritual+health+banner.jpg?format=1500w\n",
                               "key": "wtpo0gt9u5",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 43,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "yshqhuuy60",
                               "isVisible": true,
                               "version": 1,
@@ -887,7 +879,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             }
                           ],

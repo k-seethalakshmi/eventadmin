@@ -1308,17 +1308,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 4,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://img.freepik.com/free-photo/close-up-microphone-concert-stage-with-beautiful-lighting_169016-11074.jpg?w=1060&t=st=1678687780~exp=1678688380~hmac=22b51630d195803a337bb79012c5a762e26318b56e1e5e504692bbd32e31e6a9",
                               "key": "wtpo0gt9u5",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 19,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "dpzflzybcm",
                               "isVisible": true,
                               "version": 1,
@@ -1327,7 +1323,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -1435,9 +1431,6 @@
                       "dynamicBindingPathList": [
                         {
                           "key": "buttonColor"
-                        },
-                        {
-                          "key": "borderRadius"
                         }
                       ],
                       "isDisabled": false,
@@ -1452,7 +1445,7 @@
                       "parentId": "72kdar8sd8",
                       "renderMode": "CANVAS",
                       "isLoading": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "0px",
                       "buttonVariant": "PRIMARY"
                     }
                   ],

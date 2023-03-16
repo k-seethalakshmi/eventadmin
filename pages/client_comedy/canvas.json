@@ -84,18 +84,14 @@
                       "parentColumnSpace": 11.09375,
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 20,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
+                      "leftColumn": 22,
+                      "dynamicBindingPathList": [],
                       "defaultImage": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR1g0bhk9NzcizgrKh9RvSgLIybWPnPRm1TWA&usqp=CAU",
                       "key": "ao74kpe4sv",
                       "image": "",
                       "isDeprecated": false,
-                      "rightColumn": 39,
-                      "objectFit": "cover",
+                      "rightColumn": 41,
+                      "objectFit": "contain",
                       "widgetId": "hp8iedqys0",
                       "isVisible": true,
                       "version": 1,
@@ -104,7 +100,7 @@
                       "isLoading": false,
                       "maxZoomLevel": 1,
                       "enableDownload": false,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "0px",
                       "enableRotation": false
                     },
                     {
@@ -116,8 +112,8 @@
                         "paragraph",
                         "label"
                       ],
-                      "topRow": 18,
-                      "bottomRow": 22,
+                      "topRow": 17,
+                      "bottomRow": 21,
                       "parentRowSpace": 10,
                       "type": "TEXT_WIDGET",
                       "hideCard": false,
@@ -126,7 +122,7 @@
                       "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                       "parentColumnSpace": 11.09375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 23,
+                      "leftColumn": 27,
                       "dynamicBindingPathList": [
                         {
                           "key": "truncateButtonColor"
@@ -143,7 +139,7 @@
                       "text": "Comedy Show\n",
                       "key": "habhc26ng5",
                       "isDeprecated": false,
-                      "rightColumn": 39,
+                      "rightColumn": 38,
                       "textAlign": "LEFT",
                       "dynamicHeight": "AUTO_HEIGHT",
                       "widgetId": "tt8bzkfgtt",
@@ -233,18 +229,14 @@
                       "parentColumnSpace": 11.09375,
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 10,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
+                      "leftColumn": 13,
+                      "dynamicBindingPathList": [],
                       "defaultImage": "https://media.istockphoto.com/id/944794890/vector/comedy-show-stand-up-invitation-is-a-neon-sign-emblem-bright-flyer-light-poster-neon-banner.jpg?s=612x612&w=0&k=20&c=vYUrO0jCTi0YAdLBlFClEgGrkS7NoU-lNpgQ2f_ojSA=\n",
                       "key": "ao74kpe4sv",
                       "image": "",
                       "isDeprecated": false,
-                      "rightColumn": 27,
-                      "objectFit": "cover",
+                      "rightColumn": 25,
+                      "objectFit": "contain",
                       "widgetId": "pcuqd7xsfe",
                       "isVisible": true,
                       "version": 1,
@@ -254,7 +246,7 @@
                       "maxZoomLevel": 1,
                       "enableDownload": false,
                       "originalTopRow": 33,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "0px",
                       "originalBottomRow": 45,
                       "enableRotation": false
                     },
@@ -270,19 +262,16 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 11.09375,
+                      "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
-                      "leftColumn": 44,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
+                      "leftColumn": 42,
+                      "dynamicBindingPathList": [],
                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                       "key": "ao74kpe4sv",
                       "image": "",
                       "isDeprecated": false,
-                      "rightColumn": 56,
-                      "objectFit": "cover",
+                      "rightColumn": 53,
+                      "objectFit": "contain",
                       "widgetId": "l972dibr68",
                       "isVisible": true,
                       "version": 1,
@@ -292,7 +281,7 @@
                       "maxZoomLevel": 1,
                       "enableDownload": false,
                       "originalTopRow": 33,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "0px",
                       "originalBottomRow": 45,
                       "enableRotation": false
                     },
@@ -320,8 +309,8 @@
                       "key": "ao74kpe4sv",
                       "image": "",
                       "isDeprecated": false,
-                      "rightColumn": 41,
-                      "objectFit": "cover",
+                      "rightColumn": 39,
+                      "objectFit": "contain",
                       "widgetId": "l3wnw19o36",
                       "isVisible": true,
                       "version": 1,

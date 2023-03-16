@@ -826,17 +826,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 4,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://www.ombradellaterra.nl/wp-content/uploads/2020/12/Online-Workshop-Effectief-online-brainstormen-%E2%80%93-Hoe-doe-je-dat.png",
                               "key": "wtpo0gt9u5",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 16,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "ywvfontgxm",
                               "isVisible": true,
                               "version": 1,
@@ -845,7 +841,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             },
                             {
@@ -868,17 +864,13 @@
                               ],
                               "imageShape": "RECTANGLE",
                               "leftColumn": 29,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
+                              "dynamicBindingPathList": [],
                               "defaultImage": "https://piggy-rider.s3.ap-south-1.amazonaws.com/craft-workshop-disha-mehta-primary-image-PlossZezGSujyTwz.jpg",
                               "key": "wtpo0gt9u5",
                               "image": "",
                               "isDeprecated": false,
                               "rightColumn": 41,
-                              "objectFit": "cover",
+                              "objectFit": "contain",
                               "widgetId": "67mljcn1hl",
                               "isVisible": true,
                               "version": 1,
@@ -887,7 +879,7 @@
                               "isLoading": false,
                               "maxZoomLevel": 1,
                               "enableDownload": false,
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "borderRadius": "0px",
                               "enableRotation": false
                             }
                           ],
@@ -1274,6 +1266,7 @@
                               "resetFormOnClick": false,
                               "boxShadow": "0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05)",
                               "widgetName": "Button4",
+                              "onClick": "{{navigateTo('Adding Events', {}, 'SAME_WINDOW')}}",
                               "buttonColor": "#3b82f6",
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -1288,7 +1281,11 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 8.41650390625,
-                              "dynamicTriggerPathList": [],
+                              "dynamicTriggerPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "leftColumn": 44,
                               "dynamicBindingPathList": [],
                               "text": "BOOK\n",

@@ -95,7 +95,7 @@
                       "image": "",
                       "isDeprecated": false,
                       "rightColumn": 40,
-                      "objectFit": "cover",
+                      "objectFit": "contain",
                       "widgetId": "1312i7za0g",
                       "isVisible": true,
                       "version": 1,
@@ -234,17 +234,13 @@
                       "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
                       "leftColumn": 10,
-                      "dynamicBindingPathList": [
-                        {
-                          "key": "borderRadius"
-                        }
-                      ],
+                      "dynamicBindingPathList": [],
                       "defaultImage": "https://images.squarespace-cdn.com/content/v1/57fbdd00440243c787b8adbc/1481869110946-DDOJRSSG32SHKHY6ZM89/Spiritual+health+banner.jpg?format=1500w\n",
                       "key": "ao74kpe4sv",
                       "image": "",
                       "isDeprecated": false,
                       "rightColumn": 27,
-                      "objectFit": "cover",
+                      "objectFit": "contain",
                       "widgetId": "bb0o3yuaxr",
                       "isVisible": true,
                       "version": 1,
@@ -254,7 +250,7 @@
                       "maxZoomLevel": 1,
                       "enableDownload": false,
                       "originalTopRow": 34,
-                      "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                      "borderRadius": "0px",
                       "originalBottomRow": 46,
                       "enableRotation": false
                     },
@@ -270,6 +266,7 @@
                       "hideCard": false,
                       "animateLoading": true,
                       "parentColumnSpace": 11.09375,
+                      "dynamicTriggerPathList": [],
                       "imageShape": "RECTANGLE",
                       "leftColumn": 42,
                       "dynamicBindingPathList": [
@@ -282,7 +279,7 @@
                       "image": "",
                       "isDeprecated": false,
                       "rightColumn": 55,
-                      "objectFit": "cover",
+                      "objectFit": "contain",
                       "widgetId": "drhm7mge2z",
                       "isVisible": true,
                       "version": 1,
@@ -321,7 +318,7 @@
                       "image": "",
                       "isDeprecated": false,
                       "rightColumn": 41,
-                      "objectFit": "cover",
+                      "objectFit": "contain",
                       "widgetId": "f4vl9lloog",
                       "isVisible": true,
                       "version": 1,

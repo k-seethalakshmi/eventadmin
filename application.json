@@ -29,7 +29,7 @@
       "isDefault": false
     },
     {
-      "id": "User Details",
+      "id": "Event List",
       "isDefault": false
     },
     {
@@ -74,6 +74,10 @@
     },
     {
       "id": "Event_Booking",
+      "isDefault": false
+    },
+    {
+      "id": "Adding Events",
       "isDefault": false
     }
   ],
