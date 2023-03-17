@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Insert_client",
+    "name": "get_eventlist",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Client Event",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"Create Event\",\n  \"documents\": [\n    {\n      \"Event Details\": \"new value\",\n      \"Event Name\": \"new value\",\n      \"Event Type\": [1, 2, 3],\n      \"Price\": \"new value\",\n      \"Time\": \"new value\",\n      \"Venue Name\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"date\": \"new value\",\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"Event Amount\": \"900\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Create Event"
+          "data": "EventList"
         },
         "command": {
-          "data": "INSERT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -60,16 +59,16 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
             "data": ""
           },
-          "sort": {
-            "data": ""
-          },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -78,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Event Details\": \"new value\",\n      \"Event Name\": \"new value\",\n      \"Event Type\": [1, 2, 3],\n      \"Price\": \"new value\",\n      \"Time\": \"new value\",\n      \"Venue Name\": \"new value\",\n      \n      \"date\": \"new value\",\n}]"
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -97,18 +96,18 @@
         }
       }
     },
-    "executeOnLoad": false,
+    "executeOnLoad": true,
     "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [],
-    "userSetOnLoad": false,
+    "userSetOnLoad": true,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Client Event_Insert_client",
+  "id": "Home_get_eventlist",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640f0497ec8a74287acb1326"
+  "gitSyncId": "64115632c182ff53e439cb05_6413fbb3ae2e8410c8d1ac58"
 }

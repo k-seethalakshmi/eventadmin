@@ -78,7 +78,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Event Details\": \"{{}}\",\n      \"Event Name\": \"new value\",\n      \"Event Type\": \"new value\",\n      \"Price\": \"new value\",\n      \"Status\": \"new value\",\n      \"Time\": \"new value\",\n      \"Venu Name\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"date\": \"new value\",\n\t \"Amount\": {{amount.text}},\n      \"Date\":  {{date.selectedDate}},\n      \"Event Name\": {{event_name.text}},\n      \"Location\": {{locate.text}},\n      \"Name\":  {{Name.text}},\n      \"Time\":  {{time.text}},\n     \n\t\n}]"
+            "data": "[{      \"Event_Amount\": {{Event_Amount.text}},\n      \"Event_Date\": {{Date1.formattedDate}},\n\t\"Event_language\": {{Event_Language.selectedOptionValue}},\n\t\"Event_Mode\":{{Event_Mode.selectedOptionValue}},\n    \"Event_Name\": {{EventName.text}},\n      \"Event_Place\":{{Event_Place.text}},\n      \"Event_Time\": {{Event_time.text}},\n\t    \"Event_image\": {{Event_image.text}},\n }]"
           }
         },
         "smartSubstitution": {
@@ -107,13 +107,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "",
-      "Name.text",
-      "amount.text",
-      "date.selectedDate",
-      "event_name.text",
-      "locate.text",
-      "time.text"
+      "Date1.formattedDate",
+      "EventName.text",
+      "Event_Amount.text",
+      "Event_Language.selectedOptionValue",
+      "Event_Mode.selectedOptionValue",
+      "Event_Place.text",
+      "Event_image.text",
+      "Event_time.text"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,

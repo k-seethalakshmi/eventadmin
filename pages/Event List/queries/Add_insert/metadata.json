@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "insert_event",
+    "name": "Add_insert",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"EventList\",\n  \"documents\": [\n    {\n      \"EventDate\": \"new value\",\n      \"EventLanguage\": \"new value\",\n      \"EventMode\": \"new value\",\n      \"EventName\": \"new value\",\n      \"EventPlace\": \"new value\",\n      \"EventTime\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"EventDate\": \"mar6, 2022\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
           "data": "EventList"
         },
         "command": {
-          "data": "INSERT"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
             "data": ""
           },
-          "sort": {
-            "data": ""
-          },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Event_Amount\": {{Event_Amount.text}},\n      \"Event_Date\": {{Date1.formattedDate}},\n\t\"Event_language\": {{Event_Language.selectedOptionValue}},\n\t\"Event_Mode\":{{Event_Mode.selectedOptionValue}},\n    \"Event_Name\": {{EventName.text}},\n      \"Event_Place\":{{Event_Place.text}},\n      \"Event_Time\": {{Event_time.text}},\n\t    \"Event_image\": {{Event_image.text}},\n }]"
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -96,31 +96,18 @@
         }
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.insert.documents.data"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Date1.formattedDate",
-      "EventName.text",
-      "Event_Amount.text",
-      "Event_Language.selectedOptionValue",
-      "Event_Mode.selectedOptionValue",
-      "Event_Place.text",
-      "Event_image.text",
-      "Event_time.text"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_insert_event",
+  "id": "Event List_Add_insert",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6412d922d67ea94e3d972095"
+  "gitSyncId": "64115632c182ff53e439cb05_6413f81cd67ea94e3d972d2c"
 }

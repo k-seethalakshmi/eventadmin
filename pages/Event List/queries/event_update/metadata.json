@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Client_events",
+    "name": "event_update",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Client Event",
+    "pageId": "Event List",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"clientevents\",\n  \"filter\": {\n    \"Email\": \"seetha@gmail.com\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"update\": \"EventList\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Event_Amount\": \"new value\" } }\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "clientevents"
+          "data": "EventList"
         },
         "command": {
-          "data": "FIND"
+          "data": "UPDATE"
         },
         "count": {
           "query": {
@@ -60,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -86,29 +85,46 @@
         },
         "updateMany": {
           "limit": {
-            "data": "SINGLE"
+            "data": "ALL"
           },
           "query": {
-            "data": ""
+            "data": "{ \"_id\": ObjectId({{Eventlist.triggeredRow._id}}) }"
           },
           "update": {
-            "data": ""
+            "data": "{ \"$set\": { \"Event_Amount\": {{Ueventamount.text}},\n      \"Event_Date\": {{udate.formattedDate}},\n\t\"Event_language\": {{ueventlanguage.selectedOptionValue}},\n\t\"Event_Mode\":{{ueventmode.selectedOptionValue}},\n    \"Event_Name\": {{Ueventname.text}},\n      \"Event_Place\":{{ueventplace.text}},\n      \"Event_Time\": {{ueventtime.text}},\n\t    \"Event_image\": {{ueventimage.text}} } }"
           }
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.updateMany.update.data"
+      },
+      {
+        "key": "formData.updateMany.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Eventlist.triggeredRow._id",
+      "Ueventamount.text",
+      "Ueventname.text",
+      "udate.formattedDate",
+      "ueventimage.text",
+      "ueventlanguage.selectedOptionValue",
+      "ueventmode.selectedOptionValue",
+      "ueventplace.text",
+      "ueventtime.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Client Event_Client_events",
+  "id": "Event List_event_update",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640f0227ec8a74287acb131c"
+  "gitSyncId": "64115632c182ff53e439cb05_641444ff71d5213f118d2cfd"
 }

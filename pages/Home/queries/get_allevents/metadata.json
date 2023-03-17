@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "ADDEvent_List",
+    "name": "get_allevents",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,9 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event List",
+    "pageId": "Home",
     "actionConfiguration": {
-      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -23,61 +22,31 @@
         "aggregate": {
           "limit": {
             "data": "10"
-          },
-          "arrayPipelines": {
-            "data": ""
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Event List\",\n  \"filter\": {\n    \"Event Amount\": \"500\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"All Events\",\n  \"filter\": {\n    \"Amount\": \"asdsf\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "EventList"
+          "data": "All Events"
         },
         "command": {
           "data": "FIND"
         },
-        "count": {
-          "query": {
-            "data": ""
-          }
-        },
         "delete": {
           "limit": {
             "data": "SINGLE"
-          },
-          "query": {
-            "data": ""
-          }
-        },
-        "distinct": {
-          "query": {
-            "data": ""
-          },
-          "key": {
-            "data": ""
           }
         },
         "find": {
           "query": {
-            "data": ""
+            "data": "{ \"Amount\": \"asdsf\"}"
           },
           "limit": {
             "data": "10"
           },
           "sort": {
             "data": "{\"_id\": 1}"
-          },
-          "skip": {
-            "data": ""
-          },
-          "projection": {
-            "data": ""
-          }
-        },
-        "insert": {
-          "documents": {
-            "data": ""
           }
         },
         "smartSubstitution": {
@@ -86,18 +55,11 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
-          },
-          "query": {
-            "data": ""
-          },
-          "update": {
-            "data": ""
           }
         }
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -107,7 +69,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_ADDEvent_List",
+  "id": "Home_get_allevents",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6412b15e806a4f4f793fcb1f"
+  "gitSyncId": "64115632c182ff53e439cb05_6414387471d5213f118d2c6b"
 }
