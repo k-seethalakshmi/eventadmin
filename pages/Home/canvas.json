@@ -2801,7 +2801,7 @@
                       "triggeredItemView": "{{{}}}",
                       "widgetName": "List1",
                       "requiresFlatWidgetChildren": true,
-                      "listData": "{{get_eventlist.data}},\n{{get_allevents.data}}",
+                      "listData": "{{get_eventlist.data}}\n",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -5351,16 +5351,6 @@
             {
               "id": "Home_get_eventlist",
               "name": "get_eventlist",
-              "confirmBeforeExecute": false,
-              "pluginType": "DB",
-              "jsonPathKeys": [],
-              "timeoutInMillisecond": 10000
-            }
-          ],
-          [
-            {
-              "id": "Home_get_allevents",
-              "name": "get_allevents",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
