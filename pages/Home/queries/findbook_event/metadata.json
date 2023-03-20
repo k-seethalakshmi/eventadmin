@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "findbook_event",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Create Events",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"Create Event\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"Event_Amount\": \"800\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Create Event"
+          "data": "EventList"
         },
         "command": {
-          "data": "DELETE"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -48,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"\") }"
+            "data": ""
           }
         },
         "distinct": {
@@ -60,16 +59,16 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
             "data": ""
           },
-          "sort": {
-            "data": ""
-          },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -108,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Create Events_Query1",
+  "id": "Home_findbook_event",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640ea3758d2ca137add051a9"
+  "gitSyncId": "64115632c182ff53e439cb05_6417f796ec20775f76c4db01"
 }

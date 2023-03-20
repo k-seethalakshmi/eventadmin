@@ -213,7 +213,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{insert_event.run(\n()=>\n\t{Add_insert.run();\n\tcloseModal('Event_list')\n \n\t})}}",
+                              "onClick": "{{insert_event.run(\n()=>\n\t{get_eventlist.run();\n\tcloseModal('Event_list')\n \n\t})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -1035,7 +1035,7 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1Copy",
-                              "onClick": "{{Add_insert.run(\n()=>\n\t{event_update.run();\n\tcloseModal('update_event')\n \n\t})}}",
+                              "onClick": "{{get_eventlist.run(\n()=>\n\t{event_update.run();\n\tcloseModal('update_event')\n\t})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
                               "dynamicPropertyPathList": [
                                 {
@@ -1907,7 +1907,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679053154436,
+              "columnUpdatedAt": 1679291234951,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1962,7 +1962,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": false,
+                  "isVisible": true,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -2284,7 +2284,7 @@
               "textSize": "0.875rem",
               "widgetId": "s4b4ucpuhw",
               "minWidth": 450,
-              "tableData": "{{Add_insert.data}}",
+              "tableData": "{{get_eventlist.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -2566,8 +2566,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "Event List_Add_insert",
-              "name": "Add_insert",
+              "id": "Event List_get_eventlist",
+              "name": "get_eventlist",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

@@ -3838,7 +3838,7 @@
               "defaultSelectedRowIndices": [
                 0
               ],
-              "widgetName": "Table1",
+              "widgetName": "Allevent_table",
               "defaultPageSize": 0,
               "columnOrder": [
                 "Event_mode",
@@ -3889,7 +3889,7 @@
                   "label": "Event_mode",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_mode\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_mode\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3918,7 +3918,7 @@
                   "label": "Event_Amount",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Amount\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Amount\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3947,7 +3947,7 @@
                   "label": "Event_Place",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Place\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Place\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -3976,7 +3976,7 @@
                   "label": "_id",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"_id\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -4005,7 +4005,7 @@
                   "label": "Event_Date",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Date\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Date\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -4034,7 +4034,7 @@
                   "label": "Event_Name",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Name\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Name\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -4063,7 +4063,7 @@
                   "label": "Event_time",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_time\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_time\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -4092,7 +4092,7 @@
                   "label": "Event_Language",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Language\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Language\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -4121,7 +4121,7 @@
                   "label": "Event_image",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Table1.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_image\"]))}}",
+                  "computedValue": "{{Allevent_table.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_image\"]))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""

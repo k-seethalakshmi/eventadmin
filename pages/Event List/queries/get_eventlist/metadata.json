@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query3",
+    "name": "get_eventlist",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Create Events",
+    "pageId": "Event List",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"Create Event\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"EventDate\": \"mar6, 2022\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Create Event"
+          "data": "EventList"
         },
         "command": {
-          "data": "DELETE"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -48,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId{{(.triggeredRow.id) }}}"
+            "data": ""
           }
         },
         "distinct": {
@@ -60,16 +59,16 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
             "data": ""
           },
-          "sort": {
-            "data": ""
-          },
           "limit": {
+            "data": "10"
+          },
+          "sort": {
+            "data": "{\"_id\": 1}"
+          },
+          "skip": {
             "data": ""
           },
           "projection": {
@@ -97,24 +96,18 @@
         }
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.delete.query.data"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "(.triggeredRow.id) "
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Create Events_Query3",
+  "id": "Event List_get_eventlist",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640eaa2cec8a74287acb0dbc"
+  "gitSyncId": "64115632c182ff53e439cb05_6413f81cd67ea94e3d972d2c"
 }

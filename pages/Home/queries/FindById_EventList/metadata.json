@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query2",
+    "name": "FindById_EventList",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Create Events",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"Create Event\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
         },
         "collection": {
-          "data": "Create Event"
+          "data": "EventList"
         },
         "command": {
-          "data": "DELETE"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -48,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"createEvents\") }"
+            "data": ""
           }
         },
         "distinct": {
@@ -60,10 +59,10 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
+            "data": "{\"_id\": ObjectId({{Ev.selectRow._id}})}"
+          },
+          "skip": {
             "data": ""
           },
           "sort": {
@@ -98,17 +97,23 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.find.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Ev.selectRow._id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Create Events_Query2",
+  "id": "Home_FindById_EventList",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640ea3ceec8a74287acb0d72"
+  "gitSyncId": "64115632c182ff53e439cb05_6417f37fc5b989733bd7c287"
 }

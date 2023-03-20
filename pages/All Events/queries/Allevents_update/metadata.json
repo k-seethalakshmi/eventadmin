@@ -89,10 +89,10 @@
             "data": "ALL"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{Allevent_data.triggeredRow._id}}}) }"
+            "data": "{ \"_id\": ObjectId({{Allevent_table.triggeredRow._id}}) } "
           },
           "update": {
-            "data": "{ \"$set\": { \"Amount\": {{amount.text}},\n      \"Date\":  {{date.selectedDate}},\n      \"Event Name\": {{event_name.text}},\n      \"Location\": {{locate.text}},\n      \"Name\":  {{Name.text}},\n      \"Time\":  {{time.text}}"
+            "data": "{ \"$set\": { \"Amount\": {{amount.text}},\n      \"Date\":  {{date.selectedDate}},\n      \"Event Name\": {{event_name.text}},\n      \"Location\": {{locate.text}},\n      \"Name\":  {{Name.text}},\n      \"Time\":  {{time.text}}}"
           }
         }
       }
@@ -110,7 +110,7 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Allevent_data.triggeredRow._id",
+      "Allevent_table.triggeredRow._id",
       "Name.text",
       "amount.text",
       "date.selectedDate",
