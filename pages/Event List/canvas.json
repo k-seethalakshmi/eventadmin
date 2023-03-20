@@ -609,7 +609,7 @@
                               "boxShadow": "none",
                               "widgetName": "Date1",
                               "minDate": "1920-12-31T18:30:00.000Z",
-                              "dateFormat": "YYYY-MM-DD HH:mm",
+                              "dateFormat": "LL",
                               "displayName": "DatePicker",
                               "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
                               "searchTags": [

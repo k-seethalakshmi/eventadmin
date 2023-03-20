@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "ceventdelete",
+    "name": "insert",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,12 +13,11 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Create Events",
+    "pageId": "Event_Booking",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
-      "body": "",
       "selfReferencingDataPaths": [],
       "formData": {
         "aggregate": {
@@ -30,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"delete\": \"Create Event\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"Client Event details\",\n  \"documents\": [\n    {\n      \"Email\": \"new value\",\n      \"Event_Date\": \"new value\",\n      \"Event_Image\": \"new value\",\n      \"Event_Name\": \"new value\",\n      \"Event_Time\": \"new value\",\n      \"Event_Type\": \"new value\",\n      \"Event_city\": \"new value\",\n      \"Name\": \"new value\",\n      \"Phone_number\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "Create Event"
+          "data": "Client Event details"
         },
         "command": {
-          "data": "DELETE"
+          "data": "INSERT"
         },
         "count": {
           "query": {
@@ -48,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{eventdata.triggeredRow._id}}) }"
+            "data": ""
           }
         },
         "distinct": {
@@ -78,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": ""
+            "data": "[{       \"Email\":{{cemail.inputText}},\n      \"Event_Date\": {{ceventdate.selectedDate}},\n      \"Event_Image\": {{ceventimage.inputText}},\n      \"Event_Name\": {{ceventname.inputText}},\n      \"Event_Time\": {{ceventtime.inputText}},\n      \"Event_Type\": {{Ceventtype.options}},\n      \"Event_city\":{{ceventcity.inputText}},\n      \"Name\": {{ceventname.inputText}},\n      \"Phone_number\": {{cphone.inputText}},\n}]"
           }
         },
         "smartSubstitution": {
@@ -100,21 +99,28 @@
     "executeOnLoad": false,
     "dynamicBindingPathList": [
       {
-        "key": "formData.delete.query.data"
+        "key": "formData.insert.documents.data"
       }
     ],
     "isValid": true,
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "eventdata.triggeredRow._id"
+      "Ceventtype.options",
+      "cemail.inputText",
+      "ceventcity.inputText",
+      "ceventdate.selectedDate",
+      "ceventimage.inputText",
+      "ceventname.inputText",
+      "ceventtime.inputText",
+      "cphone.inputText"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Create Events_ceventdelete",
+  "id": "Event_Booking_insert",
   "deleted": false,
-  "gitSyncId": "6401e0bc8a12fa7e07dead04_640eab6cec8a74287acb0dcc"
+  "gitSyncId": "64115632c182ff53e439cb05_64180fd97ca58a1ab08074a4"
 }

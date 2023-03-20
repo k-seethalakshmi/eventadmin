@@ -80,8 +80,8 @@
                       "searchTags": [
                         "group"
                       ],
-                      "topRow": 0,
-                      "bottomRow": 58,
+                      "topRow": 1,
+                      "bottomRow": 59,
                       "parentRowSpace": 10,
                       "type": "FORM_WIDGET",
                       "hideCard": false,
@@ -89,7 +89,7 @@
                       "animateLoading": true,
                       "parentColumnSpace": 11.09375,
                       "dynamicTriggerPathList": [],
-                      "leftColumn": 1,
+                      "leftColumn": 3,
                       "dynamicBindingPathList": [
                         {
                           "key": "borderRadius"
@@ -171,8 +171,13 @@
                               "resetFormOnClick": true,
                               "boxShadow": "none",
                               "widgetName": "Button1",
-                              "onClick": "{{showModal('sucessregister')}}",
+                              "onClick": "{{insert_clientevents.run(\n()=>\n{get_clientdetails.run();\n})}}",
                               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "dynamicPropertyPathList": [
+                                {
+                                  "key": "onClick"
+                                }
+                              ],
                               "displayName": "Button",
                               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                               "searchTags": [
@@ -222,7 +227,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1",
+                              "widgetName": "CName",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -281,7 +286,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy5",
+                              "widgetName": "ceventtime",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -340,7 +345,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy5Copy1",
+                              "widgetName": "ceventname",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -399,7 +404,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy5Copy",
+                              "widgetName": "ceventimage",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -458,7 +463,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy4",
+                              "widgetName": "ceventcity",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -467,67 +472,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 37,
-                              "bottomRow": 41,
-                              "parentRowSpace": 10,
-                              "labelWidth": 5,
-                              "autoFocus": false,
-                              "type": "INPUT_WIDGET_V2",
-                              "hideCard": false,
-                              "animateLoading": true,
-                              "parentColumnSpace": 10.26123046875,
-                              "dynamicTriggerPathList": [],
-                              "resetOnSubmit": true,
-                              "leftColumn": 28,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                }
-                              ],
-                              "labelPosition": "Top",
-                              "labelStyle": "",
-                              "inputType": "TEXT",
-                              "isDisabled": false,
-                              "key": "jgzxs2338i",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 52,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "vdwxu9in38",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "showStepArrows": false,
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "label": "",
-                              "version": 2,
-                              "parentId": "5fi9itihbq",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "iconAlign": "left",
-                              "defaultText": "",
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
-                              "widgetName": "Input1Copy3",
-                              "displayName": "Input",
-                              "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
-                              "searchTags": [
-                                "form",
-                                "text input",
-                                "number",
-                                "textarea"
-                              ],
-                              "topRow": 33,
-                              "bottomRow": 37,
+                              "topRow": 32,
+                              "bottomRow": 36,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -576,7 +522,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy1",
+                              "widgetName": "cphone",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -635,7 +581,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Input1Copy",
+                              "widgetName": "cemail",
                               "displayName": "Input",
                               "iconSVG": "/static/media/icon.9f505595da61a34f563dba82adeb06ec.svg",
                               "searchTags": [
@@ -1041,7 +987,7 @@
                               "fontFamily": "{{appsmith.theme.fontFamily.appFont}}",
                               "parentColumnSpace": 10.26123046875,
                               "dynamicTriggerPathList": [],
-                              "leftColumn": 2,
+                              "leftColumn": 3,
                               "dynamicBindingPathList": [
                                 {
                                   "key": "truncateButtonColor"
@@ -1186,7 +1132,7 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "Select1",
+                              "widgetName": "Ceventtype",
                               "isFilterable": true,
                               "displayName": "Select",
                               "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
@@ -1194,8 +1140,8 @@
                               "searchTags": [
                                 "dropdown"
                               ],
-                              "topRow": 26,
-                              "bottomRow": 33,
+                              "topRow": 25,
+                              "bottomRow": 32,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "type": "SELECT_WIDGET",
@@ -1237,6 +1183,64 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "ceventdate",
+                              "minDate": "1920-12-31T18:30:00.000Z",
+                              "dateFormat": "LL",
+                              "displayName": "DatePicker",
+                              "iconSVG": "/static/media/icon.300e5ab8e2e1c26c7a0bad06116842b7.svg",
+                              "searchTags": [
+                                "calendar"
+                              ],
+                              "topRow": 36,
+                              "bottomRow": 43,
+                              "shortcuts": false,
+                              "parentRowSpace": 10,
+                              "labelWidth": 5,
+                              "type": "DATE_PICKER_WIDGET2",
+                              "hideCard": false,
+                              "animateLoading": true,
+                              "parentColumnSpace": 11.71875,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 28,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                }
+                              ],
+                              "labelPosition": "Top",
+                              "isDisabled": false,
+                              "key": "22es0qq93q",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "defaultDate": "2023-03-20T06:05:17.723Z",
+                              "isDeprecated": false,
+                              "rightColumn": 52,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "09nkyvfyfd",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "datePickerType": "DATE_PICKER",
+                              "label": "\n",
+                              "version": 2,
+                              "parentId": "5fi9itihbq",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "timePrecision": "minute",
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "firstDayOfWeek": 0,
+                              "closeOnSelection": true,
+                              "maxDate": "2121-12-31T18:29:00.000Z",
+                              "minDynamicHeight": 4
                             }
                           ],
                           "key": "tnsepwgkfj",
@@ -1260,7 +1264,7 @@
                       "key": "kwyi97xvfk",
                       "backgroundColor": "#FFFFFF",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 59,
                       "dynamicHeight": "FIXED",
                       "widgetId": "nwg0jtp8db",
                       "minWidth": 450,
