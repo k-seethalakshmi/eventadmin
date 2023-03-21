@@ -337,7 +337,7 @@
                                 "textarea"
                               ],
                               "topRow": 0,
-                              "bottomRow": 7,
+                              "bottomRow": 4,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -354,6 +354,9 @@
                                 },
                                 {
                                   "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultText"
                                 }
                               ],
                               "labelPosition": "Top",
@@ -371,7 +374,7 @@
                               "showStepArrows": false,
                               "minWidth": 450,
                               "isVisible": true,
-                              "label": "Label",
+                              "label": "",
                               "version": 2,
                               "parentId": "gph219ttrl",
                               "labelAlignment": "left",
@@ -381,7 +384,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "iconAlign": "left",
-                              "defaultText": "",
+                              "defaultText": "{{event_list.data[0].}}",
                               "minDynamicHeight": 4
                             }
                           ],
