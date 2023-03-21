@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "get_clienteventDetails",
+    "name": "Query1",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,8 +13,9 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "ClientEvent_Details",
+    "pageId": "Event List",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -22,31 +23,61 @@
         "aggregate": {
           "limit": {
             "data": "10"
+          },
+          "arrayPipelines": {
+            "data": ""
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Client Event details\",\n  \"filter\": {\n    \"Email\": \"seetha@gmail.com\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"signin\",\n  \"filter\": {\n    \"email\": \"123@gmail.com\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
-          "data": "Client Event details"
+          "data": "signin"
         },
         "command": {
           "data": "FIND"
         },
+        "count": {
+          "query": {
+            "data": ""
+          }
+        },
         "delete": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          }
+        },
+        "distinct": {
+          "query": {
+            "data": ""
+          },
+          "key": {
+            "data": ""
           }
         },
         "find": {
           "query": {
-            "data": "{ \"Email\": \"seetha@gmail.com\"}"
+            "data": ""
           },
           "limit": {
             "data": "10"
           },
           "sort": {
             "data": "{\"_id\": 1}"
+          },
+          "skip": {
+            "data": ""
+          },
+          "projection": {
+            "data": ""
+          }
+        },
+        "insert": {
+          "documents": {
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -55,11 +86,18 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          },
+          "update": {
+            "data": ""
           }
         }
       }
     },
-    "executeOnLoad": true,
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
@@ -69,7 +107,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "ClientEvent_Details_get_clienteventDetails",
+  "id": "Event List_Query1",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641809bbec20775f76c4dbe8"
+  "gitSyncId": "64115632c182ff53e439cb05_64193f6c5dd27b35c42b5204"
 }

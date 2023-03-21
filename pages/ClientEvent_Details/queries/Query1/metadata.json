@@ -25,22 +25,20 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"Client Event details\",\n  \"documents\": [\n    {\n      \"Email\": \"new value\",\n      \"Event_Date\": \"new value\",\n      \"Event_Image\": \"new value\",\n      \"Event_Name\": \"new value\",\n      \"Event_Time\": \"new value\",\n      \"Event_Type\": \"new value\",\n      \"Event_city\": \"new value\",\n      \"Name\": \"new value\",\n      \"Phone_number\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
+          "data": "{\n  \"delete\": \"Client Event details\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
         },
         "collection": {
           "data": "Client Event details"
         },
         "command": {
-          "data": "INSERT"
+          "data": "DELETE"
         },
         "delete": {
           "limit": {
             "data": "SINGLE"
-          }
-        },
-        "insert": {
-          "documents": {
-            "data": "[{      \"Email\": \"new value\",\n      \"Event_Date\": \"new value\",\n      \"Event_Image\": \"new value\",\n      \"Event_Name\": \"new value\",\n      \"Event_Time\": \"new value\",\n      \"Event_Type\": \"new value\",\n      \"Event_city\": \"new value\",\n      \"Name\": \"new value\",\n      \"Phone_number\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n}]"
+          },
+          "query": {
+            "data": "{ \"_id\": ObjectId(\"id_of_document_to_delete\") }"
           }
         },
         "smartSubstitution": {
@@ -65,5 +63,5 @@
   },
   "id": "ClientEvent_Details_Query1",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641810686bac9819a7218077"
+  "gitSyncId": "64115632c182ff53e439cb05_6419465c5dd27b35c42b52e4"
 }

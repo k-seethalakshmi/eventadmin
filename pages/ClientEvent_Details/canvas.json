@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 550,
+          "bottomRow": 410,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -6362,9 +6362,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "tableData"
-                },
-                {
                   "key": "primaryColumns.Event_Type.computedValue"
                 },
                 {
@@ -6393,10 +6390,22 @@
                 },
                 {
                   "key": "primaryColumns.Name.computedValue"
+                },
+                {
+                  "key": "tableData"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.buttonColor"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.borderRadius"
+                },
+                {
+                  "key": "primaryColumns.customColumn2.boxShadow"
                 }
               ],
               "needsHeightForContent": true,
-              "leftColumn": 2,
+              "leftColumn": 0,
               "delimiter": ",",
               "defaultSelectedRowIndex": 0,
               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -6430,7 +6439,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679296874787,
+              "columnUpdatedAt": 1679377944746,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -6446,11 +6455,12 @@
                 "Event_Date",
                 "Event_Name",
                 "Event_Time",
-                "Name"
+                "Name",
+                "customColumn2"
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 55,
+              "bottomRow": 41,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -6751,6 +6761,39 @@
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
+                },
+                "customColumn2": {
+                  "allowCellWrapping": false,
+                  "index": 10,
+                  "width": 150,
+                  "originalId": "customColumn2",
+                  "id": "customColumn2",
+                  "alias": "Delete",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "button",
+                  "textSize": "0.875rem",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": true,
+                  "label": "Delete",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "",
+                  "sticky": "",
+                  "validation": {},
+                  "buttonStyle": "rgb(3, 179, 101)",
+                  "labelColor": "#FFFFFF",
+                  "buttonColor": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.colors.primaryColor))}}",
+                  "borderRadius": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
+                  "boxShadow": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
+                  "customAlias": "",
+                  "buttonLabel": "Delete\n"
                 }
               },
               "key": "zcetv169h7",
@@ -6760,7 +6803,7 @@
               "textSize": "0.875rem",
               "widgetId": "ynq4lqxtay",
               "minWidth": 450,
-              "tableData": "{{get_clienteventDetails.data}}",
+              "tableData": "{{get.data}}",
               "label": "Data",
               "searchKey": "",
               "parentId": "0",
@@ -6776,8 +6819,8 @@
         "layoutOnLoadActions": [
           [
             {
-              "id": "ClientEvent_Details_get_clienteventDetails",
-              "name": "get_clienteventDetails",
+              "id": "ClientEvent_Details_get",
+              "name": "get",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],

@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "table",
+    "name": "Delete_events",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "ClientEvent_Details",
+    "pageId": "Event List",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"Client Event details\",\n  \"filter\": {\n    \"Email\": \"seetha@gmail.com\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"delete\": \"EventList\",\n  \"deletes\": [\n    {\n      \"q\": {\n        \"_id\": \"id_of_document_to_delete\"\n      },\n      \"limit\": 1\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "Client Event details"
+          "data": "EventList"
         },
         "command": {
-          "data": "FIND"
+          "data": "DELETE"
         },
         "count": {
           "query": {
@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": ""
+            "data": "{ \"_id\": ObjectId({{Eventlist.triggeredRow._id}}) }"
           }
         },
         "distinct": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -97,17 +97,23 @@
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.delete.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Eventlist.triggeredRow._id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "ClientEvent_Details_table",
+  "id": "Event List_Delete_events",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641810727ca58a1ab08074a6"
+  "gitSyncId": "64115632c182ff53e439cb05_641943910890e1448c1bdf8f"
 }

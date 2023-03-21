@@ -901,7 +901,7 @@
                       "labelTextSize": "0.875rem",
                       "isRequired": false,
                       "isDeprecated": false,
-                      "rightColumn": 13,
+                      "rightColumn": 14,
                       "dynamicHeight": "FIXED",
                       "widgetId": "zai381srsf",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
