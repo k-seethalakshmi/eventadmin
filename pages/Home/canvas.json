@@ -3214,7 +3214,7 @@
                                           "key": "image"
                                         }
                                       ],
-                                      "leftColumn": 3,
+                                      "leftColumn": 1,
                                       "defaultImage": "https://assets.appsmith.com/widgets/default.png",
                                       "key": "j9dv0pufst",
                                       "image": "{{currentItem.Event_image}}",

@@ -6469,7 +6469,11 @@
               "parentRowSpace": 10,
               "hideCard": false,
               "parentColumnSpace": 14.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "primaryColumns.customColumn2.onClick"
+                }
+              ],
               "borderWidth": "1",
               "primaryColumns": {
                 "Event_Type": {
@@ -6793,7 +6797,8 @@
                   "borderRadius": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( appsmith.theme.borderRadius.appBorderRadius))}}",
                   "boxShadow": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
-                  "buttonLabel": "Delete\n"
+                  "buttonLabel": "Delete\n",
+                  "onClick": "{{delete_clients.run()}}"
                 }
               },
               "key": "zcetv169h7",

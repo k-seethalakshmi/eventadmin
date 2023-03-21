@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 490,
+          "bottomRow": 450,
           "containerStyle": "none",
           "snapRows": 58,
           "parentRowSpace": 1,
@@ -1267,8 +1267,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 39,
-                              "bottomRow": 43,
+                              "topRow": 33,
+                              "bottomRow": 37,
                               "parentRowSpace": 10,
                               "labelWidth": "0",
                               "autoFocus": false,
@@ -1567,63 +1567,6 @@
                             },
                             {
                               "boxShadow": "none",
-                              "widgetName": "ueventmodeCopy",
-                              "isFilterable": true,
-                              "displayName": "Select",
-                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
-                              "labelText": "Event Mode",
-                              "searchTags": [
-                                "dropdown"
-                              ],
-                              "topRow": 35,
-                              "bottomRow": 39,
-                              "parentRowSpace": 10,
-                              "labelWidth": "0",
-                              "type": "SELECT_WIDGET",
-                              "serverSideFiltering": false,
-                              "hideCard": false,
-                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( Eventlist.triggeredRow.Event_Mode))(ueventmodeCopy.options, ueventmodeCopy.serverSideFiltering) }}",
-                              "animateLoading": true,
-                              "parentColumnSpace": 9.83740234375,
-                              "dynamicTriggerPathList": [],
-                              "leftColumn": 0,
-                              "dynamicBindingPathList": [
-                                {
-                                  "key": "accentColor"
-                                },
-                                {
-                                  "key": "borderRadius"
-                                },
-                                {
-                                  "key": "defaultOptionValue"
-                                }
-                              ],
-                              "labelPosition": "Left",
-                              "options": "[\n  {\n    \"label\": \"Online\",\n    \"value\": \"Online\"\n  },\n  {\n    \"label\": \"Offline\",\n    \"value\": \"Offline\"\n  }\n]",
-                              "placeholderText": "Select option",
-                              "isDisabled": false,
-                              "key": "3faaiy13z5",
-                              "labelTextSize": "0.875rem",
-                              "isRequired": false,
-                              "isDeprecated": false,
-                              "rightColumn": 53,
-                              "dynamicHeight": "FIXED",
-                              "widgetId": "1vpgp5xqg5",
-                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
-                              "minWidth": 450,
-                              "isVisible": true,
-                              "version": 1,
-                              "parentId": "uhberhjofc",
-                              "labelAlignment": "left",
-                              "renderMode": "CANVAS",
-                              "isLoading": false,
-                              "responsiveBehavior": "fill",
-                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-                              "maxDynamicHeight": 9000,
-                              "minDynamicHeight": 4
-                            },
-                            {
-                              "boxShadow": "none",
                               "widgetName": "ueventlanguage",
                               "isFilterable": true,
                               "displayName": "Select",
@@ -1632,8 +1575,8 @@
                               "searchTags": [
                                 "dropdown"
                               ],
-                              "topRow": 29,
-                              "bottomRow": 34,
+                              "topRow": 28,
+                              "bottomRow": 33,
                               "parentRowSpace": 10,
                               "labelWidth": "0",
                               "type": "SELECT_WIDGET",
@@ -1808,7 +1751,7 @@
               "borderColor": "#E0DEDE",
               "isVisibleDownload": true,
               "iconSVG": "/static/media/icon.db8a9cbd2acd22a31ea91cc37ea2a46c.svg",
-              "topRow": 6,
+              "topRow": 8,
               "isSortable": true,
               "type": "TABLE_WIDGET_V2",
               "inlineEditingSaveOption": "ROW_LEVEL",
@@ -1923,22 +1866,22 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679374157447,
+              "columnUpdatedAt": 1679383554750,
               "defaultSelectedRowIndices": [
                 0
               ],
               "widgetName": "Eventlist",
               "defaultPageSize": 0,
               "columnOrder": [
-                "_id",
-                "Event_Amount1",
                 "Event_Name1",
-                "Event_image",
-                "Event_Mode1",
-                "Event_Place1",
                 "Event_Date1",
-                "Event_language",
                 "Event_Time",
+                "Event_Place1",
+                "Event_Mode1",
+                "Event_language",
+                "Event_image",
+                "Event_Amount1",
+                "_id",
                 "customColumn1",
                 "customColumn2",
                 "EditActions1"
@@ -1952,7 +1895,7 @@
                 }
               ],
               "displayName": "Table",
-              "bottomRow": 49,
+              "bottomRow": 45,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -1986,7 +1929,7 @@
                   "fontStyle": "",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": true,
                   "isEditable": true,
@@ -2172,7 +2115,9 @@
                   "computedValue": "{{Eventlist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Date\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "inputFormat": "DD-MM-YYYY",
+                  "outputFormat": "DD/MM/YYYY"
                 },
                 "Event_language": {
                   "allowCellWrapping": false,
@@ -2230,7 +2175,8 @@
                   "computedValue": "{{Eventlist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Time\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "customAlias": ""
                 },
                 "customColumn1": {
                   "allowCellWrapping": false,
@@ -2313,7 +2259,7 @@
                   "textSize": "0.875rem",
                   "enableFilter": true,
                   "enableSort": true,
-                  "isVisible": true,
+                  "isVisible": false,
                   "isDisabled": false,
                   "isCellEditable": false,
                   "isEditable": false,
@@ -2323,7 +2269,7 @@
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
                   "computedValue": "",
-                  "sticky": "right",
+                  "sticky": "",
                   "validation": {},
                   "buttonStyle": "rgb(3, 179, 101)",
                   "saveIconAlign": "left",
@@ -2342,7 +2288,7 @@
               "key": "u0g45lay8p",
               "canFreezeColumn": true,
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 64,
               "textSize": "0.875rem",
               "widgetId": "s4b4ucpuhw",
               "minWidth": 450,

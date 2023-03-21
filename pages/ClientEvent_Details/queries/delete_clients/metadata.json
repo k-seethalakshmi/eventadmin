@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "delete_clients",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -15,6 +15,7 @@
     },
     "pageId": "ClientEvent_Details",
     "actionConfiguration": {
+      "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
       "encodeParamsToggle": true,
       "selfReferencingDataPaths": [],
@@ -22,6 +23,9 @@
         "aggregate": {
           "limit": {
             "data": "10"
+          },
+          "arrayPipelines": {
+            "data": ""
           }
         },
         "body": {
@@ -33,12 +37,47 @@
         "command": {
           "data": "DELETE"
         },
+        "count": {
+          "query": {
+            "data": ""
+          }
+        },
         "delete": {
           "limit": {
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId(\"id_of_document_to_delete\") }"
+            "data": "{ \"_id\": ObjectId({{Client_details.triggeredRow._id}}) }"
+          }
+        },
+        "distinct": {
+          "query": {
+            "data": ""
+          },
+          "key": {
+            "data": ""
+          }
+        },
+        "find": {
+          "skip": {
+            "data": ""
+          },
+          "query": {
+            "data": ""
+          },
+          "sort": {
+            "data": ""
+          },
+          "limit": {
+            "data": ""
+          },
+          "projection": {
+            "data": ""
+          }
+        },
+        "insert": {
+          "documents": {
+            "data": ""
           }
         },
         "smartSubstitution": {
@@ -47,21 +86,34 @@
         "updateMany": {
           "limit": {
             "data": "SINGLE"
+          },
+          "query": {
+            "data": ""
+          },
+          "update": {
+            "data": ""
           }
         }
       }
     },
     "executeOnLoad": false,
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.delete.query.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Client_details.triggeredRow._id"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "ClientEvent_Details_Query1",
+  "id": "ClientEvent_Details_delete_clients",
   "deleted": false,
   "gitSyncId": "64115632c182ff53e439cb05_6419465c5dd27b35c42b52e4"
 }

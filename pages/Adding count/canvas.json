@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Adding Events",
-    "slug": "adding-events",
+    "name": "Adding count",
+    "slug": "adding-count",
     "layouts": [
       {
         "viewMode": false,
@@ -192,13 +192,13 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 39,
+                                      "leftColumn": 25,
                                       "dynamicBindingPathList": [],
                                       "text": "",
                                       "isDisabled": false,
                                       "key": "9993np35up",
                                       "labelTextSize": "0.875rem",
-                                      "rightColumn": 46,
+                                      "rightColumn": 32,
                                       "isDefaultClickDisabled": true,
                                       "iconName": "minus",
                                       "widgetId": "5vqscdwkp5",
@@ -237,7 +237,7 @@
                                           "key": "onClick"
                                         }
                                       ],
-                                      "leftColumn": 56,
+                                      "leftColumn": 52,
                                       "dynamicBindingPathList": [],
                                       "text": "",
                                       "isDisabled": false,
@@ -273,7 +273,7 @@
                                       "parentColumnSpace": 7.13671875,
                                       "dynamicTriggerPathList": [],
                                       "resetOnSubmit": true,
-                                      "leftColumn": 46,
+                                      "leftColumn": 34,
                                       "dynamicBindingPathList": [
                                         {
                                           "key": "defaultText"
@@ -288,7 +288,7 @@
                                       "key": "wt1jl4coff",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
-                                      "rightColumn": 56,
+                                      "rightColumn": 52,
                                       "widgetId": "m2s6zw01zo",
                                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                                       "isVisible": true,
@@ -345,6 +345,7 @@
                               "hideCard": false,
                               "animateLoading": true,
                               "parentColumnSpace": 10.60302734375,
+                              "dynamicTriggerPathList": [],
                               "resetOnSubmit": true,
                               "leftColumn": 0,
                               "dynamicBindingPathList": [
@@ -528,7 +529,7 @@
                                 "textarea"
                               ],
                               "topRow": 1,
-                              "bottomRow": 8,
+                              "bottomRow": 5,
                               "parentRowSpace": 10,
                               "labelWidth": 5,
                               "autoFocus": false,
@@ -2659,7 +2660,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Adding Events",
+        "id": "Adding count",
         "deleted": false,
         "policies": [],
         "userPermissions": []

@@ -77,10 +77,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 58,
+              "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 63,
+              "originalBottomRow": 60,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -136,10 +136,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 58,
+              "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 62,
+              "originalBottomRow": 59,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -195,10 +195,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 58,
+              "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 63,
+              "originalBottomRow": 60,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -297,7 +297,7 @@
               "originalTopRow": 35,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 43,
+              "originalBottomRow": 40,
               "fontSize": "1.875rem",
               "minDynamicHeight": 4
             },
@@ -353,10 +353,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 45,
+              "originalTopRow": 42,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 49,
+              "originalBottomRow": 46,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -393,8 +393,8 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 54,
-              "originalBottomRow": 58
+              "originalTopRow": 51,
+              "originalBottomRow": 55
             },
             {
               "widgetName": "Text4",
@@ -448,10 +448,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 45,
+              "originalTopRow": 42,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 49,
+              "originalBottomRow": 46,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -507,10 +507,10 @@
               "renderMode": "CANVAS",
               "isLoading": false,
               "responsiveBehavior": "fill",
-              "originalTopRow": 58,
+              "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 62,
+              "originalBottomRow": 59,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
@@ -518,6 +518,7 @@
               "resetFormOnClick": false,
               "boxShadow": "none",
               "widgetName": "Button1",
+              "onClick": "{{navigateTo('Count Amount', {}, 'SAME_WINDOW')}}",
               "buttonColor": "{{appsmith.theme.colors.primaryColor}}",
               "displayName": "Button",
               "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -532,7 +533,11 @@
               "hideCard": false,
               "animateLoading": true,
               "parentColumnSpace": 14.0625,
-              "dynamicTriggerPathList": [],
+              "dynamicTriggerPathList": [
+                {
+                  "key": "onClick"
+                }
+              ],
               "leftColumn": 46,
               "dynamicBindingPathList": [
                 {
