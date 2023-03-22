@@ -3218,7 +3218,7 @@
                                       "image": "{{currentItem.Event_image}}",
                                       "isDeprecated": false,
                                       "rightColumn": 31,
-                                      "objectFit": "cover",
+                                      "objectFit": "contain",
                                       "widgetId": "emoqlialzn",
                                       "isVisible": true,
                                       "version": 1,

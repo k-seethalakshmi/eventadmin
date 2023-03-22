@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 580,
+          "bottomRow": 600,
           "containerStyle": "none",
           "snapRows": 57,
           "parentRowSpace": 1,
@@ -34,8 +34,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "topRow": 55,
+              "bottomRow": 60,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -93,8 +93,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "topRow": 55,
+              "bottomRow": 59,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -152,8 +152,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "topRow": 55,
+              "bottomRow": 59,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -219,6 +219,9 @@
               "leftColumn": 2,
               "dynamicBindingPathList": [
                 {
+                  "key": "borderRadius"
+                },
+                {
                   "key": "image"
                 }
               ],
@@ -227,7 +230,7 @@
               "image": "{{event_list_details.data[0].Event_image}}",
               "isDeprecated": false,
               "rightColumn": 63,
-              "objectFit": "cover",
+              "objectFit": "auto",
               "widgetId": "5ngl1lnrx6",
               "isVisible": true,
               "version": 1,
@@ -236,7 +239,7 @@
               "isLoading": false,
               "maxZoomLevel": 1,
               "enableDownload": false,
-              "borderRadius": "0px",
+              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "enableRotation": false
             },
             {
@@ -249,7 +252,7 @@
                 "label"
               ],
               "topRow": 35,
-              "bottomRow": 39,
+              "bottomRow": 40,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -307,8 +310,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 41,
-              "bottomRow": 45,
+              "topRow": 42,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -365,8 +368,8 @@
               "searchTags": [
                 "line"
               ],
-              "topRow": 50,
-              "bottomRow": 54,
+              "topRow": 51,
+              "bottomRow": 55,
               "parentRowSpace": 10,
               "type": "DIVIDER_WIDGET",
               "capType": "nc",
@@ -402,8 +405,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 41,
-              "bottomRow": 45,
+              "topRow": 42,
+              "bottomRow": 46,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,
@@ -461,8 +464,8 @@
                 "paragraph",
                 "label"
               ],
-              "topRow": 54,
-              "bottomRow": 58,
+              "topRow": 55,
+              "bottomRow": 59,
               "parentRowSpace": 10,
               "type": "TEXT_WIDGET",
               "hideCard": false,

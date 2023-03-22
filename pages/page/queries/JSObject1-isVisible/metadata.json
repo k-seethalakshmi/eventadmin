@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Page1",
-    "collectionId": "Page1_JSObject1",
+    "pageId": "page",
+    "collectionId": "page_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 0,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "Page1_JSObject1.isVisible",
+  "id": "page_JSObject1.isVisible",
   "deleted": false,
   "gitSyncId": "64115632c182ff53e439cb05_6412f2c3806a4f4f793fce3f"
 }

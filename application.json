@@ -33,10 +33,6 @@
       "isDefault": false
     },
     {
-      "id": "Music Event",
-      "isDefault": false
-    },
-    {
       "id": "Home",
       "isDefault": false
     },
@@ -57,10 +53,6 @@
       "isDefault": false
     },
     {
-      "id": "Event_Booking",
-      "isDefault": false
-    },
-    {
       "id": "Adding count",
       "isDefault": false
     },
@@ -69,7 +61,7 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "page",
       "isDefault": false
     },
     {
@@ -78,6 +70,10 @@
     },
     {
       "id": "List Show",
+      "isDefault": false
+    },
+    {
+      "id": "Event_booking",
       "isDefault": false
     }
   ],

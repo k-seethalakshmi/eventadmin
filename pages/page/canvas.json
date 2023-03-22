@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "Page1",
-    "slug": "page1",
+    "name": "page",
+    "slug": "page",
     "layouts": [
       {
         "viewMode": false,
@@ -45,7 +45,7 @@
               "shouldScrollContents": true,
               "animateLoading": true,
               "parentColumnSpace": 17.9375,
-              "leftColumn": 2,
+              "leftColumn": 3,
               "dynamicBindingPathList": [
                 {
                   "key": "borderRadius"
@@ -82,8 +82,8 @@
                         "click",
                         "submit"
                       ],
-                      "topRow": 1,
-                      "bottomRow": 5,
+                      "topRow": 2,
+                      "bottomRow": 6,
                       "parentRowSpace": 10,
                       "type": "BUTTON_WIDGET",
                       "hideCard": false,
@@ -263,7 +263,7 @@
               "key": "p9y2zf2p6w",
               "backgroundColor": "#FFFFFF",
               "isDeprecated": false,
-              "rightColumn": 63,
+              "rightColumn": 62,
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "00k3on24zw",
               "containerStyle": "card",
@@ -1566,14 +1566,15 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "Page1",
+        "id": "page",
         "deleted": false,
         "policies": [],
         "userPermissions": []
       }
     ],
     "userPermissions": [],
-    "policies": []
+    "policies": [],
+    "isHidden": false
   },
   "deleted": false,
   "gitSyncId": "64115632c182ff53e439cb05_6412ed48d67ea94e3d9722d4"
