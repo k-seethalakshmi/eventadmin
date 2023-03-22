@@ -75,6 +75,10 @@
     {
       "id": "Event_booking",
       "isDefault": false
+    },
+    {
+      "id": "Page1",
+      "isDefault": false
     }
   ],
   "viewMode": false,

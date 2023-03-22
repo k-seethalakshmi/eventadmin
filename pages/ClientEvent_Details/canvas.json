@@ -6362,9 +6362,6 @@
                   "key": "boxShadow"
                 },
                 {
-                  "key": "primaryColumns.Event_Type.computedValue"
-                },
-                {
                   "key": "primaryColumns.Event_Image.computedValue"
                 },
                 {
@@ -6402,6 +6399,15 @@
                 },
                 {
                   "key": "primaryColumns.customColumn2.boxShadow"
+                },
+                {
+                  "key": "primaryColumns.Event_amount.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Event_language.computedValue"
+                },
+                {
+                  "key": "primaryColumns.Event_Type.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -6439,7 +6445,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679377944746,
+              "columnUpdatedAt": 1679462808912,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -6456,6 +6462,8 @@
                 "Event_Name",
                 "Event_Time",
                 "Name",
+                "Event_amount",
+                "Event_language",
                 "customColumn2"
               ],
               "dynamicPropertyPathList": [],
@@ -6500,7 +6508,7 @@
                   "label": "Event_Type",
                   "isSaveVisible": true,
                   "isDiscardVisible": true,
-                  "computedValue": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_Type\"]))}}",
+                  "computedValue": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( get.data[0].Event_Type))}}",
                   "sticky": "",
                   "validation": {},
                   "cellBackground": ""
@@ -6799,6 +6807,64 @@
                   "customAlias": "",
                   "buttonLabel": "Delete\n",
                   "onClick": "{{delete_clients.run()}}"
+                },
+                "Event_amount": {
+                  "allowCellWrapping": false,
+                  "index": 3,
+                  "width": 150,
+                  "originalId": "Event_amount",
+                  "id": "Event_amount",
+                  "alias": "Event_amount",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Event_amount",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_amount\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
+                },
+                "Event_language": {
+                  "allowCellWrapping": false,
+                  "index": 8,
+                  "width": 150,
+                  "originalId": "Event_language",
+                  "id": "Event_language",
+                  "alias": "Event_language",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "Event_language",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"Event_language\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "zcetv169h7",
