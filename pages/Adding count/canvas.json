@@ -286,6 +286,7 @@
                                       "inputType": "NUMBER",
                                       "isDisabled": false,
                                       "key": "wt1jl4coff",
+                                      "validation": "",
                                       "labelTextSize": "0.875rem",
                                       "isRequired": false,
                                       "rightColumn": 52,
@@ -384,7 +385,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "iconAlign": "left",
-                              "defaultText": "{{event_list.data[0].}}",
+                              "defaultText": "{{appsmith.URL.queryParams.id}}",
                               "minDynamicHeight": 4
                             }
                           ],
@@ -579,7 +580,7 @@
                               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
                               "maxDynamicHeight": 9000,
                               "iconAlign": "left",
-                              "defaultText": "{{countInput.text}}",
+                              "defaultText": "{{appsmith.URL.queryParams.id * countInput.text}}",
                               "minDynamicHeight": 4
                             }
                           ],

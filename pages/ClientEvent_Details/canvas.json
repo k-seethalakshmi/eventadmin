@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 410,
+          "bottomRow": 620,
           "containerStyle": "none",
           "snapRows": 51,
           "parentRowSpace": 1,
@@ -6468,7 +6468,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 41,
+              "bottomRow": 62,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -6806,7 +6806,7 @@
                   "boxShadow": "{{Client_details.processedTableData.map((currentRow, currentIndex) => ( 'none'))}}",
                   "customAlias": "",
                   "buttonLabel": "Delete\n",
-                  "onClick": "{{delete_clients.run()}}"
+                  "onClick": "{{delete_clients.run(() => showAlert('Deleted Successfully','success'), () => {})}}"
                 },
                 "Event_amount": {
                   "allowCellWrapping": false,
