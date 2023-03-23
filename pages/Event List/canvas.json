@@ -226,8 +226,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 42,
-                              "bottomRow": 46,
+                              "topRow": 44,
+                              "bottomRow": 48,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -276,8 +276,8 @@
                                 "click",
                                 "submit"
                               ],
-                              "topRow": 42,
-                              "bottomRow": 46,
+                              "topRow": 44,
+                              "bottomRow": 48,
                               "type": "BUTTON_WIDGET",
                               "hideCard": false,
                               "animateLoading": true,
@@ -439,8 +439,8 @@
                                 "number",
                                 "textarea"
                               ],
-                              "topRow": 35,
-                              "bottomRow": 39,
+                              "topRow": 40,
+                              "bottomRow": 44,
                               "parentRowSpace": 10,
                               "labelWidth": "0",
                               "autoFocus": false,
@@ -764,6 +764,63 @@
                               "rightColumn": 53,
                               "dynamicHeight": "FIXED",
                               "widgetId": "z46vgqy0x0",
+                              "accentColor": "{{appsmith.theme.colors.primaryColor}}",
+                              "minWidth": 450,
+                              "isVisible": true,
+                              "version": 1,
+                              "parentId": "dudntvt1gg",
+                              "labelAlignment": "left",
+                              "renderMode": "CANVAS",
+                              "isLoading": false,
+                              "responsiveBehavior": "fill",
+                              "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
+                              "maxDynamicHeight": 9000,
+                              "minDynamicHeight": 4
+                            },
+                            {
+                              "boxShadow": "none",
+                              "widgetName": "Event_LanguageCopy",
+                              "isFilterable": true,
+                              "displayName": "Select",
+                              "iconSVG": "/static/media/icon.bd99caba5853ad71e4b3d8daffacb3a2.svg",
+                              "labelText": "categories\n\n",
+                              "searchTags": [
+                                "dropdown"
+                              ],
+                              "topRow": 35,
+                              "bottomRow": 40,
+                              "parentRowSpace": 10,
+                              "labelWidth": "0",
+                              "type": "SELECT_WIDGET",
+                              "serverSideFiltering": false,
+                              "hideCard": false,
+                              "defaultOptionValue": "{{ ((options, serverSideFiltering) => ( ``))(Event_LanguageCopy.options, Event_LanguageCopy.serverSideFiltering) }}",
+                              "animateLoading": true,
+                              "parentColumnSpace": 9.83740234375,
+                              "dynamicTriggerPathList": [],
+                              "leftColumn": 0,
+                              "dynamicBindingPathList": [
+                                {
+                                  "key": "accentColor"
+                                },
+                                {
+                                  "key": "borderRadius"
+                                },
+                                {
+                                  "key": "defaultOptionValue"
+                                }
+                              ],
+                              "labelPosition": "Left",
+                              "options": "[\n  {\n    \"label\": \"Music show\",\n    \"value\": \"Tamil\"\n  },\n  {\n    \"label\": \"English\",\n    \"value\": \"English\"\n  },\n\t {\n    \"label\": \"Hindi\",\n    \"value\": \"Hindi\"\n  }\n]",
+                              "placeholderText": "Select option",
+                              "isDisabled": false,
+                              "key": "3faaiy13z5",
+                              "labelTextSize": "0.875rem",
+                              "isRequired": false,
+                              "isDeprecated": false,
+                              "rightColumn": 53,
+                              "dynamicHeight": "FIXED",
+                              "widgetId": "pceyjzqtoy",
                               "accentColor": "{{appsmith.theme.colors.primaryColor}}",
                               "minWidth": 450,
                               "isVisible": true,
@@ -1828,6 +1885,9 @@
                 },
                 {
                   "key": "primaryColumns.EditActions1.isDiscardDisabled"
+                },
+                {
+                  "key": "primaryColumns.categories.computedValue"
                 }
               ],
               "needsHeightForContent": true,
@@ -1866,7 +1926,7 @@
                 }
               },
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
-              "columnUpdatedAt": 1679383554750,
+              "columnUpdatedAt": 1679559214161,
               "defaultSelectedRowIndices": [
                 0
               ],
@@ -1884,7 +1944,8 @@
                 "_id",
                 "customColumn1",
                 "customColumn2",
-                "EditActions1"
+                "EditActions1",
+                "categories"
               ],
               "dynamicPropertyPathList": [
                 {
@@ -2283,6 +2344,35 @@
                   "discardButtonVariant": "TERTIARY",
                   "isSaveDisabled": "{{Eventlist.processedTableData.map((currentRow, currentIndex) => ( !Eventlist.updatedRowIndices.includes(currentIndex)))}}",
                   "isDiscardDisabled": "{{Eventlist.processedTableData.map((currentRow, currentIndex) => ( !Eventlist.updatedRowIndices.includes(currentIndex)))}}"
+                },
+                "categories": {
+                  "allowCellWrapping": false,
+                  "index": 6,
+                  "width": 150,
+                  "originalId": "categories",
+                  "id": "categories",
+                  "alias": "categories",
+                  "horizontalAlignment": "LEFT",
+                  "verticalAlignment": "CENTER",
+                  "columnType": "text",
+                  "textColor": "",
+                  "textSize": "0.875rem",
+                  "fontStyle": "",
+                  "enableFilter": true,
+                  "enableSort": true,
+                  "isVisible": true,
+                  "isDisabled": false,
+                  "isCellEditable": false,
+                  "isEditable": false,
+                  "isCellVisible": true,
+                  "isDerived": false,
+                  "label": "categories",
+                  "isSaveVisible": true,
+                  "isDiscardVisible": true,
+                  "computedValue": "{{Eventlist.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"categories\"]))}}",
+                  "sticky": "",
+                  "validation": {},
+                  "cellBackground": ""
                 }
               },
               "key": "u0g45lay8p",

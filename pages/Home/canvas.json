@@ -2577,7 +2577,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{get_eventlist.data.filter()get_eventlist.run()m}}/",
+                      "onClick": "{{navigateTo('PageW', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
                       "dynamicPropertyPathList": [
                         {
@@ -2634,8 +2634,13 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{navigateTo('Comedy Events', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{navigateTo('List Show', {}, 'SAME_WINDOW')}}",
                       "buttonColor": "#3b82f6",
+                      "dynamicPropertyPathList": [
+                        {
+                          "key": "onClick"
+                        }
+                      ],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [

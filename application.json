@@ -87,6 +87,22 @@
     {
       "id": "adminpayment",
       "isDefault": false
+    },
+    {
+      "id": "PageW",
+      "isDefault": false
+    },
+    {
+      "id": "PageC",
+      "isDefault": false
+    },
+    {
+      "id": "PageS",
+      "isDefault": false
+    },
+    {
+      "id": "PageM",
+      "isDefault": false
     }
   ],
   "viewMode": false,
