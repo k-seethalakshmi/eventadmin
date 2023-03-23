@@ -182,7 +182,7 @@
               "text": "{{event_list_details.data[0].Event_Place}}",
               "key": "rqkiepwjie",
               "isDeprecated": false,
-              "rightColumn": 30,
+              "rightColumn": 40,
               "textAlign": "LEFT",
               "dynamicHeight": "AUTO_HEIGHT",
               "widgetId": "cl9pb7yssm",
@@ -198,7 +198,7 @@
               "originalTopRow": 55,
               "borderRadius": "{{appsmith.theme.borderRadius.appBorderRadius}}",
               "maxDynamicHeight": 9000,
-              "originalBottomRow": 60,
+              "originalBottomRow": 64,
               "fontSize": "1rem",
               "minDynamicHeight": 4
             },
