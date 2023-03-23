@@ -77,7 +77,15 @@
       "isDefault": false
     },
     {
-      "id": "Page1",
+      "id": "makepayment",
+      "isDefault": false
+    },
+    {
+      "id": "adminegistrationpage",
+      "isDefault": false
+    },
+    {
+      "id": "adminpayment",
       "isDefault": false
     }
   ],
