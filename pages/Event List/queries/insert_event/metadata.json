@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"insert\": \"EventList\",\n  \"documents\": [\n    {\n      \"EventDate\": \"new value\",\n      \"EventLanguage\": \"new value\",\n      \"EventMode\": \"new value\",\n      \"EventName\": \"new value\",\n      \"EventPlace\": \"new value\",\n      \"EventTime\": \"new value\",\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n    }\n  ]\n}\n"
+          "data": "{\n  \"insert\": \"EventList\",\n  \"documents\": [\n    {\n      \"_id\": ObjectId(\"a_valid_object_id_hex\"),\n      \"categories\": \"new value\",\n      \"event_amount\": \"new value\",\n      \"event_date\": \"new value\",\n      \"event_image\": \"new value\",\n      \"event_language\": \"new value\",\n      \"event_mode\": \"new value\",\n      \"event_name\": \"new value\",\n      \"event_place\": \"new value\",\n      \"event_time\": \"new value\",\n    }\n  ]\n}\n"
         },
         "collection": {
           "data": "EventList"
@@ -77,7 +77,7 @@
         },
         "insert": {
           "documents": {
-            "data": "[{      \"Event_Amount\": {{Event_Amount.text}},\n      \"Event_Date\": {{Date1.formattedDate}},\n\t\"Event_language\": {{Event_Language.selectedOptionValue}},\n\t\"Event_Mode\":{{Event_Mode.selectedOptionValue}},\n    \"Event_Name\": {{EventName.text}},\n      \"Event_Place\":{{Event_Place.text}},\n      \"Event_Time\": {{Event_time.text}},\n\t    \"Event_image\": {{Event_image.text}},\n }]"
+            "data": "[{      \n      \"categories\": {{cat.selectedOptionValue}},\n      \"event_amount\": {{Event_Amount.text}},\n      \"event_date\": {{Date1.selectedDate}},\n      \"event_image\": {{Event_image.text}},\n      \"event_language\": {{Event_Language.selectedOptionValue}},\n      \"event_mode\": {{Event_Mode.selectedOptionValue}},\n      \"event_name\": {{EventName.text}},\n      \"event_place\": {{Event_Place.text}},\n      \"event_time\": {{Event_time.text}},\n}]"
           }
         },
         "smartSubstitution": {
@@ -106,14 +106,15 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Date1.formattedDate",
+      "Date1.selectedDate",
       "EventName.text",
       "Event_Amount.text",
       "Event_Language.selectedOptionValue",
       "Event_Mode.selectedOptionValue",
       "Event_Place.text",
       "Event_image.text",
-      "Event_time.text"
+      "Event_time.text",
+      "cat.selectedOptionValue"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
@@ -122,5 +123,5 @@
   },
   "id": "Event List_insert_event",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6412d922d67ea94e3d972095"
+  "gitSyncId": "64115632c182ff53e439cb05_641d5bd9e9d7800556f5691a"
 }

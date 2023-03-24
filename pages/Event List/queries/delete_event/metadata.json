@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Delete_events",
+    "name": "delete_event",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -47,7 +47,7 @@
             "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{Eventlist.triggeredRow._id}}) }"
+            "data": "{ \"_id\": ObjectId({{event_list.triggeredRow._id}}) }"
           }
         },
         "distinct": {
@@ -106,14 +106,14 @@
     "invalids": [],
     "messages": [],
     "jsonPathKeys": [
-      "Eventlist.triggeredRow._id"
+      "event_list.triggeredRow._id"
     ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_Delete_events",
+  "id": "Event List_delete_event",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641943910890e1448c1bdf8f"
+  "gitSyncId": "64115632c182ff53e439cb05_641d64b64b58b56f8e378461"
 }

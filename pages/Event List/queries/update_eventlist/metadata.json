@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "Query1",
+    "name": "update_eventlist",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"signin\",\n  \"filter\": {\n    \"email\": \"123@gmail.com\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"update\": \"EventList\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"categories\": \"new value\" } }\n    }\n  ]\n}\n"
         },
         "collection": {
-          "data": "signin"
+          "data": "EventList"
         },
         "command": {
-          "data": "FIND"
+          "data": "UPDATE"
         },
         "count": {
           "query": {
@@ -59,16 +59,16 @@
           }
         },
         "find": {
+          "skip": {
+            "data": ""
+          },
           "query": {
             "data": ""
           },
-          "limit": {
-            "data": "10"
-          },
           "sort": {
-            "data": "{\"_id\": 1}"
+            "data": ""
           },
-          "skip": {
+          "limit": {
             "data": ""
           },
           "projection": {
@@ -85,29 +85,47 @@
         },
         "updateMany": {
           "limit": {
-            "data": "SINGLE"
+            "data": "ALL"
           },
           "query": {
-            "data": ""
+            "data": "{ \"_id\": ObjectId({{event_list.triggeredRow._id}}) }"
           },
           "update": {
-            "data": ""
+            "data": "{ \"$set\": { \n\n      \"categories\": {{uCat.selectedOptionValue}},\n      \"event_amount\": {{Ueventamount.text}},\n      \"event_date\": {{udate.selectedDate}},\n      \"event_image\": {{ueventimage.text}},\n      \"event_language\": {{ueventlanguage.selectedOptionValue}},\n      \"event_mode\": {{ueventmode.selectedOptionValue}},\n      \"event_name\": {{Ueventname.text}},\n      \"event_place\": {{ueventplace.text}},\n      \"event_time\": {{Ueventtime.text}},\n\n      } }"
           }
         }
       }
     },
     "executeOnLoad": false,
-    "dynamicBindingPathList": [],
+    "dynamicBindingPathList": [
+      {
+        "key": "formData.updateMany.query.data"
+      },
+      {
+        "key": "formData.updateMany.update.data"
+      }
+    ],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [],
+    "jsonPathKeys": [
+      "Ueventamount.text",
+      "Ueventname.text",
+      "Ueventtime.text",
+      "event_list.triggeredRow._id",
+      "uCat.selectedOptionValue",
+      "udate.selectedDate",
+      "ueventimage.text",
+      "ueventlanguage.selectedOptionValue",
+      "ueventmode.selectedOptionValue",
+      "ueventplace.text"
+    ],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_Query1",
+  "id": "Event List_update_eventlist",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_64193f6c5dd27b35c42b5204"
+  "gitSyncId": "64115632c182ff53e439cb05_641d5f1c4b58b56f8e3783a8"
 }

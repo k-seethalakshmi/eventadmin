@@ -29,7 +29,7 @@
           }
         },
         "body": {
-          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"EventDate\": \"mar6, 2022\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"categories\": \"music show\"\n  },\n  \"sort\": {\n    \"_id\": 1\n  },\n  \"limit\": 10\n}\n"
         },
         "collection": {
           "data": "EventList"
@@ -109,5 +109,5 @@
   },
   "id": "Event List_get_eventlist",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6413f81cd67ea94e3d972d2c"
+  "gitSyncId": "64115632c182ff53e439cb05_641d5b8f53066d1510cc707a"
 }

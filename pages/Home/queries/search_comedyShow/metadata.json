@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "event_update",
+    "name": "search_comedyShow",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -13,7 +13,7 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "Event List",
+    "pageId": "Home",
     "actionConfiguration": {
       "timeoutInMillisecond": 10000,
       "paginationType": "NONE",
@@ -29,13 +29,13 @@
           }
         },
         "body": {
-          "data": "{\n  \"update\": \"EventList\",\n  \"updates\": [\n    {\n      \"q\": {\n        \"_id\": ObjectId(\"id_of_document_to_update\")\n      },\n      \"u\": { \"$set\": { \"Event_Amount\": \"new value\" } }\n    }\n  ]\n}\n"
+          "data": "{\n  \"find\": \"EventList\",\n  \"filter\": {\n    \"_id\": ObjectId(\"id_to_query_with\")\n  }\n}\n"
         },
         "collection": {
           "data": "EventList"
         },
         "command": {
-          "data": "UPDATE"
+          "data": "FIND"
         },
         "count": {
           "query": {
@@ -59,10 +59,10 @@
           }
         },
         "find": {
-          "skip": {
-            "data": ""
-          },
           "query": {
+            "data": "{\"categories\": \"comedy show\"}"
+          },
+          "skip": {
             "data": ""
           },
           "sort": {
@@ -85,46 +85,29 @@
         },
         "updateMany": {
           "limit": {
-            "data": "ALL"
+            "data": "SINGLE"
           },
           "query": {
-            "data": "{ \"_id\": ObjectId({{Eventlist.triggeredRow._id}}) }"
+            "data": ""
           },
           "update": {
-            "data": "{ \"$set\": { \"Event_Amount\": {{Ueventamount.text}},\n      \"Event_Date\": {{udate.formattedDate}},\n\t\"Event_language\": {{ueventlanguage.selectedOptionValue}},\n\t\"Event_Mode\":{{ueventmode.selectedOptionValue}},\n    \"Event_Name\": {{Ueventname.text}},\n      \"Event_Place\":{{ueventplace.text}},\n      \"Event_Time\": {{ueventtime.text}},\n\t    \"Event_image\": {{ueventimage.text}} } }"
+            "data": ""
           }
         }
       }
     },
-    "executeOnLoad": false,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.updateMany.update.data"
-      },
-      {
-        "key": "formData.updateMany.query.data"
-      }
-    ],
+    "executeOnLoad": true,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      "Eventlist.triggeredRow._id",
-      "Ueventamount.text",
-      "Ueventname.text",
-      "udate.formattedDate",
-      "ueventimage.text",
-      "ueventlanguage.selectedOptionValue",
-      "ueventmode.selectedOptionValue",
-      "ueventplace.text",
-      "ueventtime.text"
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Event List_event_update",
+  "id": "Home_search_comedyShow",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641444ff71d5213f118d2cfd"
+  "gitSyncId": "64115632c182ff53e439cb05_641d66b553066d1510cc71c6"
 }

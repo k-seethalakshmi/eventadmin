@@ -2577,13 +2577,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{navigateTo('PageW', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{search_comedyShow.run()}}",
                       "buttonColor": "#3b82f6",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -3090,7 +3086,7 @@
                       "triggeredItemView": "{{{}}}",
                       "widgetName": "List1",
                       "requiresFlatWidgetChildren": true,
-                      "listData": "{{get_eventlist.data}}\n\n",
+                      "listData": "{{search_comedyShow.data}}\n\n",
                       "isCanvas": true,
                       "displayName": "List",
                       "iconSVG": "/static/media/icon.9925ee17dee37bf1ba7374412563a8a7.svg",
@@ -3332,7 +3328,7 @@
                                       "leftColumn": 34,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{currentItem.Event_Name}}",
+                                      "text": "{{currentItem.event_name}}",
                                       "key": "3o31zg06s6",
                                       "isDeprecated": false,
                                       "rightColumn": 46,
@@ -5643,6 +5639,14 @@
             {
               "id": "Home_get_eventlist",
               "name": "get_eventlist",
+              "confirmBeforeExecute": false,
+              "pluginType": "DB",
+              "jsonPathKeys": [],
+              "timeoutInMillisecond": 10000
+            },
+            {
+              "id": "Home_search_comedyShow",
+              "name": "search_comedyShow",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
               "jsonPathKeys": [],
