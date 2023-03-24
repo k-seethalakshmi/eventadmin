@@ -2577,7 +2577,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button1",
-                      "onClick": "{{search_comedyShow.run()}}",
+                      "onClick": "{{search_musicShow.run()}}",
                       "buttonColor": "#3b82f6",
                       "dynamicPropertyPathList": [],
                       "displayName": "Button",
@@ -2630,13 +2630,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button3",
-                      "onClick": "{{navigateTo('List Show', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{search_comedyShow.run(() => search_comedyShow.run(), () => {})}}",
                       "buttonColor": "#3b82f6",
-                      "dynamicPropertyPathList": [
-                        {
-                          "key": "onClick"
-                        }
-                      ],
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -2687,8 +2683,9 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2",
-                      "onClick": "{{navigateTo('WorkShop', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{search_workshop.run()}}",
                       "buttonColor": "#3b82f6",
+                      "dynamicPropertyPathList": [],
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
                       "searchTags": [
@@ -2737,7 +2734,7 @@
                       "resetFormOnClick": false,
                       "boxShadow": "none",
                       "widgetName": "Button2Copy",
-                      "onClick": "{{navigateTo('spritual ', {}, 'SAME_WINDOW')}}",
+                      "onClick": "{{search_spirituality.run()}}",
                       "buttonColor": "#3b82f6",
                       "displayName": "Button",
                       "iconSVG": "/static/media/icon.cca026338f1c8eb6df8ba03d084c2fca.svg",
@@ -5649,7 +5646,9 @@
               "name": "search_comedyShow",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [],
+              "jsonPathKeys": [
+                ""
+              ],
               "timeoutInMillisecond": 10000
             }
           ]

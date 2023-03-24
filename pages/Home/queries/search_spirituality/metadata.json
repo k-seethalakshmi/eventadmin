@@ -2,7 +2,7 @@
   "pluginType": "DB",
   "pluginId": "mongo-plugin",
   "unpublishedAction": {
-    "name": "search_comedyShow",
+    "name": "search_spirituality",
     "datasource": {
       "name": "Event Management",
       "pluginId": "mongo-plugin",
@@ -60,7 +60,7 @@
         },
         "find": {
           "query": {
-            "data": "{\"categories\": {{}}}"
+            "data": "{\"categories\": \"spirituality\"}"
           },
           "skip": {
             "data": ""
@@ -96,24 +96,18 @@
         }
       }
     },
-    "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.find.query.data"
-      }
-    ],
+    "executeOnLoad": false,
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      ""
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
     "userPermissions": []
   },
-  "id": "Home_search_comedyShow",
+  "id": "Home_search_spirituality",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_641d66b553066d1510cc71c6"
+  "gitSyncId": "64115632c182ff53e439cb05_641d80f96a510a2b2c1e1d6f"
 }
