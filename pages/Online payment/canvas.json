@@ -1,7 +1,7 @@
 {
   "unpublishedPage": {
-    "name": "page",
-    "slug": "page",
+    "name": "Online payment",
+    "slug": "online-payment",
     "layouts": [
       {
         "viewMode": false,
@@ -1207,7 +1207,7 @@
         "layoutOnLoadActions": [],
         "layoutOnLoadActionErrors": [],
         "validOnPageLoadActions": true,
-        "id": "page",
+        "id": "Online payment",
         "deleted": false,
         "policies": [],
         "userPermissions": []

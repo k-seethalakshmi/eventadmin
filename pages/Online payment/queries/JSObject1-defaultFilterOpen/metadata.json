@@ -2,8 +2,8 @@
   "pluginType": "JS",
   "pluginId": "js-plugin",
   "unpublishedAction": {
-    "name": "isVisible",
-    "fullyQualifiedName": "JSObject1.isVisible",
+    "name": "defaultFilterOpen",
+    "fullyQualifiedName": "JSObject1.defaultFilterOpen",
     "datasource": {
       "name": "UNUSED_DATASOURCE",
       "pluginId": "js-plugin",
@@ -13,8 +13,8 @@
       "policies": [],
       "userPermissions": []
     },
-    "pageId": "page",
-    "collectionId": "page_JSObject1",
+    "pageId": "Online payment",
+    "collectionId": "Online payment_JSObject1",
     "actionConfiguration": {
       "timeoutInMillisecond": 0,
       "paginationType": "NONE",
@@ -37,7 +37,7 @@
     "policies": [],
     "userPermissions": []
   },
-  "id": "page_JSObject1.isVisible",
+  "id": "Online payment_JSObject1.defaultFilterOpen",
   "deleted": false,
-  "gitSyncId": "64115632c182ff53e439cb05_6412f2c3806a4f4f793fce3f"
+  "gitSyncId": "64115632c182ff53e439cb05_6412f2c3806a4f4f793fce3e"
 }

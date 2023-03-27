@@ -13,7 +13,7 @@
           "detachFromLayout": true,
           "widgetId": "0",
           "topRow": 0,
-          "bottomRow": 590,
+          "bottomRow": 620,
           "containerStyle": "none",
           "snapRows": 58,
           "parentRowSpace": 1,
@@ -2260,7 +2260,7 @@
               ],
               "dynamicPropertyPathList": [],
               "displayName": "Table",
-              "bottomRow": 59,
+              "bottomRow": 62,
               "columnWidthMap": {
                 "task": 245,
                 "step": 70,
@@ -2393,7 +2393,9 @@
                   "computedValue": "{{event_list.processedTableData.map((currentRow, currentIndex) => ( currentRow[\"event_date\"]))}}",
                   "sticky": "",
                   "validation": {},
-                  "cellBackground": ""
+                  "cellBackground": "",
+                  "inputFormat": "YYYY-MM-DD",
+                  "outputFormat": "YYYY-MM-DD"
                 },
                 "event_name": {
                   "allowCellWrapping": false,
