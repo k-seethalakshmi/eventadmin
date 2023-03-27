@@ -3126,7 +3126,7 @@
                           "key": "listData"
                         }
                       ],
-                      "leftColumn": 15,
+                      "leftColumn": 18,
                       "gridType": "vertical",
                       "enhancements": true,
                       "children": [
@@ -3382,7 +3382,7 @@
                                       "leftColumn": 47,
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{currentItem.Event_Place }}",
+                                      "text": "{{currentItem.event_place }}",
                                       "key": "3o31zg06s6",
                                       "isDeprecated": false,
                                       "rightColumn": 59,
@@ -3554,7 +3554,7 @@
                                       ],
                                       "shouldTruncate": false,
                                       "truncateButtonColor": "{{appsmith.theme.colors.primaryColor}}",
-                                      "text": "{{currentItem.Event_Time}}",
+                                      "text": "{{currentItem.event_time}}",
                                       "key": "muyd2xm783",
                                       "isDeprecated": false,
                                       "rightColumn": 49,
@@ -3636,7 +3636,7 @@
                       "key": "vh4fxit5xr",
                       "backgroundColor": "transparent",
                       "isDeprecated": false,
-                      "rightColumn": 62,
+                      "rightColumn": 64,
                       "itemBackgroundColor": "#FFFFFF",
                       "widgetId": "611ok05meb",
                       "accentColor": "{{appsmith.theme.colors.primaryColor}}",
@@ -5646,9 +5646,7 @@
               "name": "search_comedyShow",
               "confirmBeforeExecute": false,
               "pluginType": "DB",
-              "jsonPathKeys": [
-                ""
-              ],
+              "jsonPathKeys": [],
               "timeoutInMillisecond": 10000
             }
           ]

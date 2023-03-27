@@ -60,7 +60,7 @@
         },
         "find": {
           "query": {
-            "data": "{\"categories\": {{}}}"
+            "data": "{\"categories\": \"comedy show\",\"categories\": \"spirituality\"}\n"
           },
           "skip": {
             "data": ""
@@ -97,17 +97,11 @@
       }
     },
     "executeOnLoad": true,
-    "dynamicBindingPathList": [
-      {
-        "key": "formData.find.query.data"
-      }
-    ],
+    "dynamicBindingPathList": [],
     "isValid": true,
     "invalids": [],
     "messages": [],
-    "jsonPathKeys": [
-      ""
-    ],
+    "jsonPathKeys": [],
     "userSetOnLoad": false,
     "confirmBeforeExecute": false,
     "policies": [],
