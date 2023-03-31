@@ -2298,7 +2298,7 @@
                               "maxDynamicHeight": 9000,
                               "originalBottomRow": 52,
                               "iconAlign": "left",
-                              "defaultText": "{{appsmith.URL.queryParams.id+10}}",
+                              "defaultText": "{{addition.myFun1.data}}",
                               "minDynamicHeight": 4
                             }
                           ],
